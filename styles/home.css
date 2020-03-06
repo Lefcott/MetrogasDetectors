@@ -56,3 +56,10 @@ body {
   font-weight: bolder;
   color: #006;
 }
+
+#generalContainer {
+  position: absolute;
+  width: 100%;
+  background-color: #DDD;
+  height: 100px;
+}
