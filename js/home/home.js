@@ -10,7 +10,9 @@ home.elements = {
 home.resize = () => {
   const tabletRelation = [0.6188, 1];
   // Get the min height of the 2 images in principal page
-  const containerTop = Math.min(...[...home.elements.bigImage].map(bigImage => bigImage.offsetHeight));
+  const containerTop = Math.min(
+    ...[...home.elements.bigImage].map(bigImage => bigImage.offsetHeight)
+  );
   home.elements.generalContainer.style.top = `${containerTop}px`;
   if (innerWidth < innerHeight) {
     mobile.resize();
