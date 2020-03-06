@@ -20,3 +20,5 @@ home.resize = () => {
 home.changeScreen = newScreen => {};
 
 // home.changeScreen(home.screen, home.screen);
+
+home.resize();
