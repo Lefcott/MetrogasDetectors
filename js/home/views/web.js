@@ -1,0 +1,3 @@
+const web = {};
+
+web.resize = () => {};

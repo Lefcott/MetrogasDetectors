@@ -1,0 +1,3 @@
+const tablet = {};
+
+tablet.resize = () => {};

@@ -1,0 +1,58 @@
+.bigImage-removethis {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: auto;
+  z-index: -2;
+}
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#bigImage1 {
+  left: 0;
+}
+
+#bigImage2 {
+  left: 25%;
+} 
+
+#boxShadow {
+  height: 200px;
+  width: 400px;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+}
+.shadowContainer {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  z-index: 1;
+  top: 0;
+  height: 200%;
+  width: 200%;
+  box-shadow: inset 0px 0px 80px 80px rgba(200, 200, 200, 1);
+}
+
+.bigImage {
+  height: 200px;
+  height: auto;
+  width: 50%;
+  position: relative;
+  z-index: -2;
+  float: left;
+}
+
+.subtitle {
+  position: absolute;
+  transform: translate(-50%);
+  left: 25%;
+  top: 10px;
+  font-family: Quicksand;
+  font-size: 21px;
+  z-index: 2;
+  font-weight: bolder;
+  color: #006;
+}
