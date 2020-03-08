@@ -15,18 +15,16 @@ body {
 #bigImage1 {
   left: 0;
   top: -90px;
-  width: 960px;
-  height: 963px;
 }
 
 #bigImage2 {
   left: 25%;
-}
+} 
 
 #boxShadow {
   height: 200px;
   width: 400px;
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
 }
 .shadowContainer {
   position: absolute;
@@ -63,6 +61,6 @@ body {
 #generalContainer {
   position: absolute;
   width: 100%;
-  background-color: #ddd;
+  background-color: #DDD;
   height: 100px;
 }
