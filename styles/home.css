@@ -9,19 +9,20 @@ body {
   width: 400px;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
 }
-.shadowContainer {
+
+#shadowContainer {
   position: absolute;
   transform: translate(-50%);
   left: 50%;
   z-index: 1;
   top: 0;
-  height: 200%;
   width: 200%;
   box-shadow: inset 0px 0px 80px 80px rgba(200, 200, 200, 1);
 }
 
 #downContainer {
   position: absolute;
+  z-index: 2;
 }
 
 #bigImage2 {
@@ -32,6 +33,15 @@ body {
 #bigImage4 {
   position: absolute;
   left: 50%;
+}
+
+#svgOverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .title {

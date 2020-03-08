@@ -10,7 +10,7 @@
   <body onresize='home.resize();' onselectstart='return false;'>
     <img src="assets/bigImage1_Web.jpg" id='bigImage1Hidden' style='display: none;' />
     <img src="assets/bigImage2_Web.jpg" id='bigImage2Hidden' style='display: none;' />
-    <div class='shadowContainer'></div>
+    <div id='shadowContainer'></div>
     <svg width='50%' viewBox="0 0 100 100" id='bigImage1' preserveAspectRatio="none">
       <image href="assets/bigImage1_Web.jpg" width='100' height='100' preserveAspectRatio="none" />
     </svg>
@@ -37,6 +37,7 @@
       <svg width='50%' viewBox="0 0 100 100" id='bigImage4' preserveAspectRatio="none">
         <image href="assets/bigImage2_Web.jpg" width='100' height='100' preserveAspectRatio="none" />
       </svg>
+      <div id = 'svgOverlay'></div>
     </div>
     <script src='js/global.js'></script>
   </body>
