@@ -21,7 +21,7 @@ body {
 }
 
 #downContainer {
-  display: block;
+  position: absolute;
 }
 
 #bigImage2 {
