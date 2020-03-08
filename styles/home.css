@@ -12,15 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-#bigImage1 {
-  left: 0;
-  top: -90px;
-}
-
-#bigImage2 {
-  left: 25%;
-}
-
 #boxShadow {
   height: 200px;
   width: 400px;
@@ -60,7 +51,7 @@ body {
   color: #072D61;
 }
 
-#generalContainer {
+#footer {
   position: absolute;
   width: 100%;
   background-color: #ddd;
