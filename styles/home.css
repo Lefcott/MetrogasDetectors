@@ -1,11 +1,3 @@
-.bigImage-removethis {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 50%;
-  height: auto;
-  z-index: -2;
-}
 body {
   padding: 0;
   margin: 0;
@@ -28,21 +20,12 @@ body {
   box-shadow: inset 0px 0px 80px 80px rgba(200, 200, 200, 1);
 }
 
-.bigImage {
-  height: 200px;
-  height: auto;
-  width: 50%;
-  position: relative;
-  z-index: -2;
-  float: left;
-}
-
 #bigImage2 {
   position: absolute;
   left: 50%;
 }
 
-.subtitle {
+.title {
   position: absolute;
   transform: translate(-50%);
   left: 25%;
@@ -53,13 +36,14 @@ body {
   font: Medium 50px/60px Gotham Rounded;
   font-weight: bolder;
   letter-spacing: 0;
-  color: #072D61;
+  color: #072d61;
 }
 
 #footer {
   position: absolute;
   width: 100%;
   background-color: #ddd;
+  z-index: 2;
 }
 
 #logo {
@@ -67,4 +51,19 @@ body {
   margin-left: 38px;
   height: 65%;
   width: auto;
+}
+
+.subtitle {
+  display: inline-block;
+  height: 100%;
+  margin-left: 30px;
+  font-family: Quicksand;
+  font-size: 3.2vh;
+  font-weight: bolder;
+  color: #072d61;
+}
+
+.subsubtitle {
+  margin-left: 0;
+  font-size: 1.6vh;
 }
