@@ -19,12 +19,12 @@ body {
 
 #bigImage2 {
   left: 25%;
-} 
+}
 
 #boxShadow {
   height: 200px;
   width: 400px;
-  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
 }
 .shadowContainer {
   position: absolute;
@@ -52,15 +52,16 @@ body {
   left: 25%;
   top: 10px;
   font-family: Quicksand;
-  font-size: 21px;
+  font-size: 2.3vw;
   z-index: 2;
+  font: Medium 50px/60px Gotham Rounded;
   font-weight: bolder;
-  color: #006;
+  letter-spacing: 0;
+  color: #072D61;
 }
 
 #generalContainer {
   position: absolute;
   width: 100%;
-  background-color: #DDD;
-  height: 100px;
+  background-color: #ddd;
 }
