@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 #boxShadow {
@@ -42,7 +42,7 @@ body {
 #footer {
   position: absolute;
   width: 100%;
-  background-color: #ddd;
+  background-color: #fff;
   z-index: 2;
 }
 
@@ -55,8 +55,7 @@ body {
 
 .subtitle {
   display: inline-block;
-  height: 100%;
-  margin-left: 30px;
+  margin-left: 80px;
   font-family: Quicksand;
   font-size: 3.2vh;
   font-weight: bolder;
@@ -66,4 +65,40 @@ body {
 .subsubtitle {
   margin-left: 0;
   font-size: 1.6vh;
+}
+
+#arrowDown {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  left: 50%;
+  top: 95%;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+#detector {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  transform: translate(0, -50%);
+  left: 55%;
+  top: 0;
+}
+
+#plus {
+  position: absolute;
+  width: 2.8%;
+  height: auto;
+  left: 77%;
+  top: 10%;
+}
+
+#mobile {
+  position: absolute;
+  width: 10%;
+  height: auto;
+  transform: translate(0, -50%);
+  left: 85%;
+  top: 0;
 }
