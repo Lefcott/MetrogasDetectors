@@ -1,4 +1,5 @@
 const global = {};
+const actions = {};
 
 global.private = {};
 global.loadScripts = (arrScripts, start) => {
@@ -67,6 +68,7 @@ global.query = (() => {
 
 (() => {
   const scripts = [
+    'js/home/actions/scrollY.js',
     'js/home/views/mobile.js',
     'js/home/views/web.js',
     'js/home/views/tablet.js',

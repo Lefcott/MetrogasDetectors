@@ -32,8 +32,8 @@ home.resize = () => {
   home.elements.bigImage2.setAttribute('height', imgHeight);
   home.elements.downContainer.style.width = `${innerWidth}px`;
   home.elements.downContainer.style.top = `${innerHeight}px`;
-  home.elements.bigImage3.setAttribute('height', imgHeight);
-  home.elements.bigImage4.setAttribute('height', imgHeight);
+  home.elements.bigImage3.setAttribute('height', innerHeight);
+  home.elements.bigImage4.setAttribute('height', innerHeight);
 
   const viewedWidth = (imgWidth / maxSize) * 100;
   const viewedHeight = (imgHeight / maxSize) * 100;
@@ -47,11 +47,11 @@ home.resize = () => {
   );
   home.elements.bigImage3.setAttribute(
     'viewBox',
-    `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`
+    `${(100 - viewedWidth) / 2} 0 ${viewedWidth} 100`
   );
   home.elements.bigImage4.setAttribute(
     'viewBox',
-    `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`
+    `${(100 - viewedWidth) / 4} 0 ${viewedWidth} 100`
   );
 
   if (innerWidth < innerHeight) {

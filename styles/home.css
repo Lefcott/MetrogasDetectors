@@ -116,6 +116,16 @@ body {
   cursor: pointer;
 }
 
+#arrowUp {
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 49.4%;
+  top: 20px;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
 #detector {
   position: absolute;
   width: 20%;
