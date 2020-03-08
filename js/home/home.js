@@ -5,13 +5,11 @@ home.screen = 'screen2';
 home.elements = {
   footer: element.id('footer'),
   bigImage1: element.id('bigImage1'),
-  bigImage1Hidden: element.id('bigImage1Hidden')
+  bigImage2: element.id('bigImage2')
 };
 
 home.constants = {
-  imgHeightCoef: 0.82,
-  bigImage1Relation: element.id('bigImage1Hidden').naturalHeight / element.id('bigImage1Hidden').naturalWidth,
-  bigImage2Relation: element.id('bigImage2Hidden').naturalHeight / element.id('bigImage2Hidden').naturalWidth
+  imgHeightCoef: 0.82
 };
 
 home.resize = () => {
@@ -25,7 +23,18 @@ home.resize = () => {
   home.elements.footer.style.height = `${(1 - imgHeightCoef) * visualViewport.height}px`;
 
   home.elements.bigImage1.setAttribute('height', imgHeight);
-  home.elements.bigImage1.setAttribute('viewBox', `0 0 ${imgWidth / maxSize * 100} ${imgHeight / maxSize * 100}`);
+  home.elements.bigImage2.setAttribute('height', imgHeight);
+
+  const viewedWidth = (imgWidth / maxSize) * 100;
+  const viewedHeight = (imgHeight / maxSize) * 100;
+  home.elements.bigImage1.setAttribute(
+    'viewBox',
+    `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`
+  );
+  home.elements.bigImage2.setAttribute(
+    'viewBox',
+    `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`
+  );
 
   if (innerWidth < innerHeight) {
     mobile.resize();

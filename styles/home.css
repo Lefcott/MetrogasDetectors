@@ -9,7 +9,7 @@
 body {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 #boxShadow {
@@ -37,6 +37,11 @@ body {
   float: left;
 }
 
+#bigImage2 {
+  position: absolute;
+  left: 50%;
+}
+
 .subtitle {
   position: absolute;
   transform: translate(-50%);
@@ -55,4 +60,11 @@ body {
   position: absolute;
   width: 100%;
   background-color: #ddd;
+}
+
+#logo {
+  margin-top: 8px;
+  margin-left: 38px;
+  height: 65%;
+  width: auto;
 }
