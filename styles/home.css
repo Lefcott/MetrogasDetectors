@@ -20,7 +20,16 @@ body {
   box-shadow: inset 0px 0px 80px 80px rgba(200, 200, 200, 1);
 }
 
+#downContainer {
+  display: block;
+}
+
 #bigImage2 {
+  position: absolute;
+  left: 50%;
+}
+
+#bigImage4 {
   position: absolute;
   left: 50%;
 }

@@ -5,7 +5,9 @@ home.screen = 'screen2';
 home.elements = {
   footer: element.id('footer'),
   bigImage1: element.id('bigImage1'),
-  bigImage2: element.id('bigImage2')
+  bigImage2: element.id('bigImage2'),
+  bigImage3: element.id('bigImage3'),
+  bigImage4: element.id('bigImage4')
 };
 
 home.constants = {
@@ -24,6 +26,8 @@ home.resize = () => {
 
   home.elements.bigImage1.setAttribute('height', imgHeight);
   home.elements.bigImage2.setAttribute('height', imgHeight);
+  home.elements.bigImage3.setAttribute('height', imgHeight);
+  home.elements.bigImage4.setAttribute('height', imgHeight);
 
   const viewedWidth = (imgWidth / maxSize) * 100;
   const viewedHeight = (imgHeight / maxSize) * 100;
@@ -32,6 +36,14 @@ home.resize = () => {
     `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`
   );
   home.elements.bigImage2.setAttribute(
+    'viewBox',
+    `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`
+  );
+  home.elements.bigImage3.setAttribute(
+    'viewBox',
+    `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`
+  );
+  home.elements.bigImage4.setAttribute(
     'viewBox',
     `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`
   );
