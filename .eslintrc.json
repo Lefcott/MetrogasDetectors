@@ -1,0 +1,42 @@
+{
+  "extends": ["eslint:recommended", "airbnb", "prettier", "prettier/flowtype"],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "experimentalObjectRestSpread": true
+  },
+  "plugins": ["react", "prettier", "flowtype"],
+  "rules": {
+    "camelcase": "off",
+    "max-len": [2, 120, 8],
+    "prettier/prettier": ["error", { "printWidth": 110, "singleQuote": true }],
+    "no-underscore-dangle": ["error", { "allow": ["_id"] }],
+    "no-invalid-this": "off",
+    "consistent-return": "off",
+    "no-return-assign": "off",
+    "no-param-reassign": "off",
+    "no-nested-ternary": "off",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "groups": ["external", ["builtin", "internal"], "parent", "sibling", "index"]
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": "off",
+    "import/named": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/default": "off",
+    "import/namespace": "off",
+    "import/no-absolute-path": "error",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/anchor-is-valid": ["error", { "components": ["Link"], "specialLink": ["to"] }],
+    "react/destructuring-assignment": "off",
+    "import/no-cycle": "off"
+  }
+}
