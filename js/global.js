@@ -48,6 +48,9 @@ const element = {
     elem.prevStyle = {};
     elem.changeStyle = global.private.changeStyle(elem);
     elem.undoStyle = global.private.undoStyle(elem);
+    elem.addClass = Class => elem.classList.add(Class);
+    elem.removeClass = Class => elem.classList.remove(Class);
+
     return elem;
   },
   class: Class => document.getElementsByClassName(Class)
