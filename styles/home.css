@@ -11,7 +11,7 @@
 body {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* overflow-y: hidden; */
 }
 
@@ -278,6 +278,7 @@ body {
 
 #techContainer {
   position: absolute;
+  overflow: hidden;
   display: block;
   z-index: 2;
   background-color: #fff;
@@ -292,12 +293,12 @@ body {
 
 #techTitle1 {
   left: 2.6%;
-  top: 5%;
+  top: 4.5%;
 }
 
 #techDescription {
   position: absolute;
-  left: 40%;
+  left: 26%;
   top: 5%;
   font-family: 'GothamRegular', sans-serif;
   color: #072d61;
@@ -307,13 +308,13 @@ body {
 
 #techTitle2 {
   left: 2.6%;
-  top: 50%;
+  top: 32%;
 }
 
 #tech1 {
   position: absolute;
   left: 40%;
-  top: 50%;
+  top: 32%;
   width: 13%;
   height: auto;
 }
@@ -321,7 +322,7 @@ body {
 #tech2 {
   position: absolute;
   left: 62.5%;
-  top: 49%;
+  top: 31.5%;
   width: 11%;
   height: auto;
 }
@@ -329,7 +330,34 @@ body {
 #tech3 {
   position: absolute;
   left: 80%;
-  top: 50%;
+  top: 32%;
   width: 13%;
   height: auto;
+}
+
+#techTitle3 {
+  left: 2.6%;
+  top: 50%;
+}
+
+.techList {
+  display: inline-block;
+}
+
+#techBoxDescription {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  font-family: 'GothamRegular', sans-serif;
+  color: #072d61;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+#techBig {
+  position: absolute;
+  left: 15%;
+  width: 78%;
+  height: auto;
+  top: 59%;
 }
