@@ -19,9 +19,7 @@ global.loadScripts = (arrScripts, start) => {
 global.private.changeStyle = elem => (style = {}) => {
   if (Object.keys(elem.prevStyle).length === 0) {
     Object.keys(elem.style).forEach(styleElem => {
-      if (elem.style[styleElem]) {
-        elem.prevStyle[styleElem] = elem.style[styleElem];
-      }
+      elem.prevStyle[styleElem] = elem.style[styleElem];
     });
   }
   Object.keys(style).forEach(styleElem => {
@@ -45,11 +43,11 @@ global.private.undoStyle = elem => () => {
 const element = {
   id: id => {
     const elem = document.getElementById(id);
-    elem.prevStyle = {};
-    elem.changeStyle = global.private.changeStyle(elem);
-    elem.undoStyle = global.private.undoStyle(elem);
-    elem.addClass = Class => elem.classList.add(Class);
-    elem.removeClass = Class => elem.classList.remove(Class);
+    elem.prevStyle = elem.prevStyle || {};
+    elem.changeStyle = elem.changeStyle || global.private.changeStyle(elem);
+    elem.undoStyle = elem.undoStyle || global.private.undoStyle(elem);
+    elem.addClass = elem.addClass || (Class => elem.classList.add(Class));
+    elem.removeClass = elem.removeClass || (Class => elem.classList.remove(Class));
 
     return elem;
   },
