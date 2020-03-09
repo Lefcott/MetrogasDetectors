@@ -9,6 +9,11 @@
   </head>
 
   <body onresize='home.resize();' onselectstart='return false;'>
+    <!-- Catching images -->
+    <img src='assets/detector_empty.png' style = 'display: none;'></img>
+    <img src='assets/detector_green.png' style = 'display: none;'></img>
+    <img src='assets/detector_yellow.png' style = 'display: none;'></img>
+    <img src='assets/detector_red.png' style = 'display: none;'></img>
     <div id="shadow"></div>
     <div id="loader"></div>
     <img src="assets/bigImage1_Web.jpg" id='bigImage1Hidden' style='display: none;' />
@@ -63,7 +68,7 @@
           <div class = 'detectorButtonText' id = 'detectorButtonText4' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText3", "assets/detector_red.png", "assets/mobile_risk3.png");'>DETECCI&Oacute;N CO</div>
         </div>
       </div>
-      <img src='assets/mute.png' id='volume'></img>
+      <img src='assets/mute.png' id='volume' onclick = 'actions.sound.mute();'></img>
       <img src='assets/detector_empty.png' id='detectorEmpty'></img>
       <img src='assets/mobile_home.png' id='mobileHome'></img>
       <img src='assets/arrowLeft.png' class='arrowLeft' onclick='actions.scrollX("downContainer", "soundContainer");'></img>

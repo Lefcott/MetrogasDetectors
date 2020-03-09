@@ -246,6 +246,7 @@ body {
   left: 50%;
   top: 25.5%;
   width: 6.5%;
+  z-index: 2;
   height: auto;
   cursor: pointer;
 }

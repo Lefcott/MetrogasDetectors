@@ -8,9 +8,7 @@ actions.scrollX = (openId, closeId) => {
     closeTarget.style.left = '150%';
   }
   openTarget.style.left = '0';
-  if (actions.sound.currId) {
-    element.id(actions.sound.currId).pause();
-  }
+  actions.sound.stop();
   // if (openId === 'techContainer') {
   //   openTarget.style.height = `${innerHeight * 2}px`;
   // }

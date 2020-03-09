@@ -1,17 +1,21 @@
 actions.sound = {};
+actions.sound.enabled = true;
+actions.sound.canEnable = false;
 actions.sound.currId = null;
 actions.sound.currButton = element.id('detectorButtonLeft');
 actions.sound.currButtonText = element.id('detectorButtonText1');
 
 actions.sound.play = (id, buttonId, buttonTextId, detectorSrc, mobileSrc) => {
   if (id) {
-    element.id(id).play();
-    element.id('volume').setAttribute('src', 'assets/volume.png');
+    actions.sound.canEnable = true;
+    if (actions.sound.enabled) {
+      element.id(id).play();
+      element.id('volume').setAttribute('src', 'assets/volume.png');
+    }
   } else {
     element.id('volume').setAttribute('src', 'assets/mute.png');
-    if (actions.sound.currId) {
-      element.id(actions.sound.currId).pause();
-    }
+    actions.sound.stop();
+    actions.sound.canEnable = false;
   }
   element.id('mobileHome').setAttribute('src', mobileSrc);
   element.id('detectorEmpty').setAttribute('src', detectorSrc);
@@ -26,4 +30,27 @@ actions.sound.play = (id, buttonId, buttonTextId, detectorSrc, mobileSrc) => {
   actions.sound.currButton.addClass('detectorButtonSelected');
   actions.sound.currButtonText = element.id(buttonTextId);
   actions.sound.currButtonText.addClass('detectorButtonTextSelected');
+};
+
+actions.sound.stop = () => {
+  if (actions.sound.currId) {
+    element.id(actions.sound.currId).pause();
+  }
+};
+
+actions.sound.mute = () => {
+  if (actions.sound.canEnable) {
+    actions.sound.enabled = !actions.sound.enabled;
+    if (actions.sound.enabled) {
+      element.id(actions.sound.currId).play();
+      element.id('volume').setAttribute('src', 'assets/volume.png');
+      // TODO remove console
+      console.log('Enabled');
+    } else {
+      actions.sound.stop();
+      element.id('volume').setAttribute('src', 'assets/mute.png');
+      // TODO remove console
+      console.log('Disabled');
+    }
+  }
 };
