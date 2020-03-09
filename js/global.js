@@ -30,6 +30,14 @@ global.private.changeStyle = elem => (style = {}) => {
   });
 };
 
+global.private.changeStyleAll = elems => (style = {}) => {
+  for (let k = 0; k < elems.length; k += 1) {
+    Object.keys(style).forEach(styleElem => {
+      elems[k].style[styleElem] = style[styleElem];
+    });
+  }
+};
+
 global.private.undoStyle = elem => () => {
   if (Object.keys(elem.prevStyle).length === 0) {
     return false;
@@ -46,6 +54,10 @@ global.private.undoStyle = elem => () => {
 const element = {
   id: id => {
     const elem = document.getElementById(id);
+    if (!elem) {
+      throw new Error(`Element with id "${id}" not found.`);
+      return;
+    }
     elem.prevStyle = elem.prevStyle || {};
     elem.changeStyle = elem.changeStyle || global.private.changeStyle(elem);
     elem.undoStyle = elem.undoStyle || global.private.undoStyle(elem);
@@ -54,7 +66,11 @@ const element = {
 
     return elem;
   },
-  class: Class => document.getElementsByClassName(Class)
+  class: Class => {
+    const elems = document.getElementsByClassName(Class);
+    elems.changeStyle = global.private.changeStyleAll(elems);
+    return elems;
+  }
 };
 
 global.query = (() => {

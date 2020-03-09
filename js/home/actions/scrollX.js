@@ -5,7 +5,7 @@ actions.scrollX = (openId, closeId) => {
   if (closeId === 'downContainer') {
     closeTarget.style.left = '-110%';
   } else {
-    closeTarget.style.left = '100%';
+    closeTarget.style.left = '150%';
   }
   openTarget.style.left = '0';
   if (openId === 'techContainer') {

@@ -8,11 +8,16 @@
   src: url('../assets/fonts/GothamLight.ttf');
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
+  position: relative;
+  overflow-y: hidden;
 }
 
 #boxShadow {
@@ -63,7 +68,6 @@ body {
   transform: translate(-50%, -50%);
   top: 50%;
   font-family: 'GothamRegular', sans-serif;
-  font-size: 2.6vw;
   font-weight: bolder;
   text-align: center;
   color: #fff;
@@ -122,7 +126,7 @@ body {
   transform: translate(-50%, -100%);
   left: 50%;
   top: 95%;
-  width: 30px;
+  width: 3.2%;
   height: auto;
   cursor: pointer;
 }
@@ -168,7 +172,7 @@ body {
   display: block;
   z-index: 2;
   background-color: #fff;
-  left: 100%;
+  left: 150%;
   transition: 0.9s;
 }
 
@@ -264,7 +268,7 @@ body {
   top: 50%;
 }
 
-.arrowRight {
+.arrowLeft {
   position: absolute;
   transform: translate(-100%, 0);
   width: 1.6%;
@@ -280,7 +284,7 @@ body {
   display: block;
   z-index: 2;
   background-color: #fff;
-  left: 100%;
+  left: 150%;
   transition: 0.9s;
 }
 
