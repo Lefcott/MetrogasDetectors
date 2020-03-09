@@ -15,6 +15,7 @@ actions.detector.load = () => {
     buttonContainer.style.height = `${containerWidth * heightCoef}px`;
     for (let k = 0; k < buttons.length; k += 1) {
       buttons[k].style.left = `${buttonWidth * k}px`;
+      buttons[k].style.width = `${buttonWidth}px`;
     }
   }, 2);
 };
