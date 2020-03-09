@@ -214,7 +214,25 @@ body {
   transform: translate(-50%, 0);
   left: 50%;
   top: 25.5%;
-  width: 6%;
+  width: 6.5%;
   height: auto;
   cursor: pointer;
+}
+
+#detectorEmpty {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: auto;
+  left: 30%;
+  top: 50%;
+}
+
+#mobileHome {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: auto;
+  left: 68%;
+  top: 50%;
 }
