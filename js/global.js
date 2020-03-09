@@ -72,7 +72,7 @@ global.query = (() => {
 
 (() => {
   const scripts = [
-    { file: 'js/home/actions/loadDetector.js', after: 'actions.detector.load();' },
+    { file: 'js/home/actions/loadDetector.js' },
     { file: 'js/home/actions/playSound.js' },
     { file: 'js/home/actions/scrollX.js' },
     { file: 'js/home/actions/scrollY.js' },

@@ -18,6 +18,7 @@ home.constants = {
 };
 
 home.resize = () => {
+  actions.detector.load();
   const tabletRelation = [0.6188, 1];
   const { imgHeightCoef } = home.constants;
   const imgWidth = innerWidth / 2;
@@ -70,5 +71,3 @@ home.resize = () => {
 };
 
 home.changeScreen = newScreen => {};
-
-home.resize();
