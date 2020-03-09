@@ -50,8 +50,8 @@
       <audio src='assets/sounds/sound1.mpeg' id='sound2' onended = 'event.target.play();'></audio>
       <div id='detectorRunningTitle'>Prob&aacute; el funcionamiento del detector<br>y la aplicaci&oacute;n mobile</div>
       <div id='buttonDetectorContainer'>
-        <div id='detectorButtonLeft' class='detectorButton detectorButtonSelected' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText1", "assets/detector_off2.png", "assets/mobile_home.png");'>
-          <div class = 'detectorButtonText detectorButtonTextSelected' id = 'detectorButtonText1' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText1", "assets/detector_off2.png", "assets/mobile_home.png");'>OFF</div>
+        <div id='detectorButtonLeft' class='detectorButton detectorButtonSelected' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText1", "assets/detector_empty.png", "assets/mobile_home.png");'>
+          <div class = 'detectorButtonText detectorButtonTextSelected' id = 'detectorButtonText1' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText1", "assets/detector_empty.png", "assets/mobile_home.png");'>OFF</div>
         </div>
         <div id='detectorButton2' class='detectorButton' onclick = 'actions.sound.play(null, "detectorButton2", "detectorButtonText2", "assets/detector_green.png", "assets/mobile_risk1.png");'>
           <div class = 'detectorButtonText' id = 'detectorButtonText2' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText2", "assets/detector_green.png", "assets/mobile_risk1.png");'>NORMAL</div>
@@ -64,7 +64,7 @@
         </div>
       </div>
       <img src='assets/mute.png' id='volume'></img>
-      <img src='assets/detector_off2.png' id='detectorEmpty'></img>
+      <img src='assets/detector_empty.png' id='detectorEmpty'></img>
       <img src='assets/mobile_home.png' id='mobileHome'></img>
       <img src='assets/arrowLeft.png' class='arrowLeft' onclick='actions.scrollX("downContainer", "soundContainer");'></img>
     </div>
