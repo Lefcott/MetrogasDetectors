@@ -99,3 +99,5 @@ global.query = (() => {
   ];
   global.loadScripts(scripts, 0);
 })();
+// TODO rmeove console
+console.log('Global');
