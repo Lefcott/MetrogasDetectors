@@ -4,6 +4,8 @@ home.screen = 'screen2';
 
 home.elements = {
   shadowContainer: element.id('shadowContainer'),
+  pageTitle: element.id('pageTitle'),
+  logo: element.id('logo'),
   footer: element.id('footer'),
   bigImage1: element.id('bigImage1'),
   bigImage2: element.id('bigImage2'),
