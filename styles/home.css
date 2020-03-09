@@ -15,8 +15,8 @@ html {
 body {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
   position: relative;
+  overflow-x: hidden;
   overflow-y: hidden;
 }
 
@@ -154,8 +154,12 @@ body {
   position: absolute;
   width: 2.8%;
   height: auto;
-  left: 77%;
+  left: 76%;
   top: 10%;
+  font-family: 'GothamLight', sans-serif;
+  font-size: 6vw;
+  font-weight: 600;
+  color: #072D61;
 }
 
 #mobile {
@@ -286,6 +290,7 @@ body {
   background-color: #fff;
   left: 150%;
   transition: 0.9s;
+  overflow-y: scroll;
 }
 
 .techTitle {
@@ -295,13 +300,13 @@ body {
 
 #techTitle1 {
   left: 2.6%;
-  top: 4.5%;
+  top: 9%;
 }
 
 #techDescription {
   position: absolute;
   left: 26%;
-  top: 5%;
+  top: 10%;
   font-family: 'GothamRegular', sans-serif;
   color: #072d61;
   line-height: 30px;
@@ -310,13 +315,13 @@ body {
 
 #techTitle2 {
   left: 2.6%;
-  top: 32%;
+  top: 64%;
 }
 
 #tech1 {
   position: absolute;
   left: 40%;
-  top: 32%;
+  top: 64%;
   width: 13%;
   height: auto;
 }
@@ -324,7 +329,7 @@ body {
 #tech2 {
   position: absolute;
   left: 62.5%;
-  top: 31.5%;
+  top: 63%;
   width: 11%;
   height: auto;
 }
@@ -332,14 +337,14 @@ body {
 #tech3 {
   position: absolute;
   left: 80%;
-  top: 32%;
+  top: 64%;
   width: 13%;
   height: auto;
 }
 
 #techTitle3 {
   left: 2.6%;
-  top: 50%;
+  top: 100%;
 }
 
 .techList {
@@ -349,7 +354,7 @@ body {
 #techBoxDescription {
   position: absolute;
   left: 20%;
-  top: 50%;
+  top: 100%;
   font-family: 'GothamRegular', sans-serif;
   color: #072d61;
   line-height: 30px;
@@ -361,5 +366,5 @@ body {
   left: 15%;
   width: 78%;
   height: auto;
-  top: 59%;
+  top: 118%;
 }
