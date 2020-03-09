@@ -50,10 +50,18 @@
       <audio src='assets/sounds/sound2.wav' id='sound2'></audio>
       <div id='detectorRunningTitle'>Prob&aacute; el funcionamiento del detector<br>y la aplicaci&oacute;n mobile</div>
       <div id='buttonDetectorContainer'>
-        <div id='detectorButtonLeft' class='detectorButton detectorButtonSelected'></div>
-        <div id='detectorButton2' class='detectorButton' onclick = 'actions.sound.play("sound0", "detectorButton2");'></div>
-        <div id='detectorButton3' class='detectorButton' onclick = 'actions.sound.play("sound1", "detectorButton3");'></div>
-        <div id='detectorButtonRight' class='detectorButton' onclick = 'actions.sound.play("sound2", "detectorButtonRight");'></div>
+        <div id='detectorButtonLeft' class='detectorButton detectorButtonSelected' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText1");'>
+          <div class = 'detectorButtonText detectorButtonTextSelected' id = 'detectorButtonText1' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText1");'>OFF</div>
+        </div>
+        <div id='detectorButton2' class='detectorButton' onclick = 'actions.sound.play("sound0", "detectorButton2", "detectorButtonText2");'>
+          <div class = 'detectorButtonText' id = 'detectorButtonText2' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText2");'>NORMAL</div>
+        </div>
+        <div id='detectorButton3' class='detectorButton' onclick = 'actions.sound.play("sound1", "detectorButton3", "detectorButtonText3");'>
+          <div class = 'detectorButtonText' id = 'detectorButtonText3' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText3");'>DETECI&Oacute;N GN</div>
+        </div>
+        <div id='detectorButtonRight' class='detectorButton' onclick = 'actions.sound.play("sound2", "detectorButtonRight", "detectorButtonText4");'>
+          <div class = 'detectorButtonText' id = 'detectorButtonText4' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText4");'>DETECCI&Oacute;N CO</div>
+        </div>
       </div>
       <img src='assets/mute.png' id='volume'></img>
       <img src='assets/detector_empty.png' id='detectorEmpty'></img>

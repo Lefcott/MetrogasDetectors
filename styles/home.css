@@ -186,6 +186,23 @@ body {
   z-index: 2;
 }
 
+.detectorButtonText {
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 1.8vw;
+  text-align: center;
+  color: #7E7E7E;
+}
+
+.detectorButtonTextSelected {
+  font-weight: bolder;
+  color: #fff;
+}
+
 .detectorButton {
   display: inline-block;
   margin: 0;
