@@ -2,10 +2,14 @@ actions.sound = {};
 actions.sound.currButton = element.id('detectorButtonLeft');
 actions.sound.currButtonText = element.id('detectorButtonText1');
 
-actions.sound.play = (id, buttonId, buttonTextId) => {
+actions.sound.play = (id, buttonId, buttonTextId, detectorSrc, mobileSrc) => {
   if (id) {
     element.id(id).play();
+    element.id('volume').setAttribute('src', 'assets/volume.png');
+  } else {
+    element.id('volume').setAttribute('src', 'assets/mute.png');
   }
+  element.id('mobileHome').setAttribute('src', mobileSrc);
   if (actions.sound.currButton) {
     actions.sound.currButton.removeClass('detectorButtonSelected');
   }

@@ -4,8 +4,11 @@ const actions = {};
 global.private = {};
 global.loadScripts = (arrScripts, start) => {
   const scriptElement = document.createElement('script');
-  scriptElement.src = arrScripts[start];
+  scriptElement.src = arrScripts[start].file;
   scriptElement.onload = () => {
+    if (arrScripts[start].after) {
+      eval(arrScripts[start].after);
+    }
     if (arrScripts[start + 1]) {
       global.loadScripts(arrScripts, start + 1);
     } else {
@@ -69,13 +72,14 @@ global.query = (() => {
 
 (() => {
   const scripts = [
-    'js/home/actions/playSound.js',
-    'js/home/actions/scrollX.js',
-    'js/home/actions/scrollY.js',
-    'js/home/views/mobile.js',
-    'js/home/views/web.js',
-    'js/home/views/tablet.js',
-    'js/home/home.js'
+    { file: 'js/home/actions/loadDetector.js', after: 'actions.detector.load();' },
+    { file: 'js/home/actions/playSound.js' },
+    { file: 'js/home/actions/scrollX.js' },
+    { file: 'js/home/actions/scrollY.js' },
+    { file: 'js/home/views/mobile.js' },
+    { file: 'js/home/views/web.js' },
+    { file: 'js/home/views/tablet.js' },
+    { file: 'js/home/home.js' }
   ];
   global.loadScripts(scripts, 0);
 })();
