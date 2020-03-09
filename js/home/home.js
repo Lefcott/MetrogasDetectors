@@ -16,6 +16,10 @@ home.elements = {
   downContainer: element.id('downContainer'),
   soundContainer: element.id('soundContainer'),
   techContainer: element.id('techContainer'),
+  techDescription: element.id('techDescription'),
+  techBoxDescription: element.id('techBoxDescription'),
+  techTitles: element.class('techTitle'),
+  techTitle3: element.id('techTitle3'),
   bigImage3: element.id('bigImage3'),
   bigImage4: element.id('bigImage4')
 };

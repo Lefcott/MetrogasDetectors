@@ -7,4 +7,8 @@ mobile.resize = () => {
   home.elements.arrowUp.style.width = '8%';
   home.elements.arrowLeft.changeStyle({ width: '6%' });
   home.elements.buttons.changeStyle({ fontSize: '5vw' });
+  home.elements.techTitles.changeStyle({ fontSize: '6vw' });
+  home.elements.techDescription.changeStyle({ fontSize: '4vw', top: '20%', lineHeight: '60px' });
+  home.elements.techBoxDescription.changeStyle({ fontSize: '4vw', lineHeight: '60px' });
+  home.elements.techTitle3.style.top = '88%';
 };

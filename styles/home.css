@@ -306,10 +306,8 @@ body {
 #techDescription {
   position: absolute;
   left: 26%;
-  top: 10%;
   font-family: 'GothamRegular', sans-serif;
   color: #072d61;
-  line-height: 30px;
   font-weight: bold;
 }
 
@@ -357,7 +355,6 @@ body {
   top: 100%;
   font-family: 'GothamRegular', sans-serif;
   color: #072d61;
-  line-height: 30px;
   font-weight: bold;
 }
 
