@@ -13,7 +13,12 @@ global.loadScripts = (arrScripts, start) => {
       global.loadScripts(arrScripts, start + 1);
     } else {
       // On script load finished
+      local.elements.show();
       home.resize();
+      const loader = element.id('loader');
+      loader.parentNode.removeChild(loader);
+      const shadow = element.id('shadow');
+      shadow.parentNode.removeChild(shadow);
     }
   };
   document.body.appendChild(scriptElement);
@@ -99,5 +104,3 @@ global.query = (() => {
   ];
   global.loadScripts(scripts, 0);
 })();
-// TODO rmeove console
-console.log('Global');

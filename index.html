@@ -9,11 +9,12 @@
   </head>
 
   <body onresize='home.resize();' onselectstart='return false;'>
+    <div id="shadow"></div>
+    <div id="loader"></div>
     <img src="assets/bigImage1_Web.jpg" id='bigImage1Hidden' style='display: none;' />
     <img src="assets/bigImage2_Web.jpg" id='bigImage2Hidden' style='display: none;' />
-    <div id='shadowContainer'></div>
     <svg width='50%' viewBox="0 0 100 100" id='bigImage1' preserveAspectRatio="none">
-      <image href="assets/bigImage1_Web.jpg" width='100' height='100' preserveAspectRatio="none" />
+      <image xlink:href="assets/bigImage1_Web.jpg" width='100' height='100' preserveAspectRatio="none" />
     </svg>
     <svg width='50%' viewBox="0 0 100 100" id='bigImage2' preserveAspectRatio="none">
       <image href="assets/bigImage2_Web.jpg" width='100' height='100' preserveAspectRatio="none" />
@@ -28,7 +29,7 @@
       </div>
       <img src='assets/arrowDown.png' id='arrowDown' onclick='actions.scrollY(1, 28);'></img>
       <img src='assets/detector.png' id='detector'></img>
-      <div src='assets/plus.png' id='plus'>+</div>
+      <div id='plus'>+</div>
       <img src='assets/mobile_home.png' id='mobile'></img>
     </div>
     <div id='downContainer'>
@@ -40,15 +41,13 @@
       </svg>
       <div id='svgOverlay'></div>
       <img src='assets/arrowUp.png' id='arrowUp' onclick='actions.scrollY(-1, 28);'></img>
-      <div class='button' id='button1' onclick='actions.scrollX("soundContainer", "downContainer");'>Prob&aacute; el
-        detector<br>en
-        funcionamiento<br>></div>
-      <div class='button' id='button2' onclick='actions.scrollX("techContainer", "downContainer");'>Especificaciones<br>t&eacute;cnicas<br>></div>
+      <div class='button' id='button1' onclick='actions.scrollX("soundContainer", "downContainer");'>Prob&aacute; el detector<br>en funcionamiento<br><img src = 'assets/arrowRight.png' class = 'arrowH' /></div>
+      <div class='button' id='button2' onclick='actions.scrollX("techContainer", "downContainer");'>Especificaciones<br>t&eacute;cnicas<br><img src = 'assets/arrowRight.png' class = 'arrowH' /></div>
     </div>
     <div id='soundContainer'>
-      <audio src='assets/sounds/sound0.wav' id='sound0'></audio>
-      <audio src='assets/sounds/sound1.wav' id='sound1'></audio>
-      <audio src='assets/sounds/sound2.wav' id='sound2'></audio>
+      <audio src='assets/sounds/sound0.wav' id='sound0' onended = 'event.target.play();'></audio>
+      <audio src='assets/sounds/sound1.mpeg' id='sound1' onended = 'event.target.play();'></audio>
+      <audio src='assets/sounds/sound1.mpeg' id='sound2' onended = 'event.target.play();'></audio>
       <div id='detectorRunningTitle'>Prob&aacute; el funcionamiento del detector<br>y la aplicaci&oacute;n mobile</div>
       <div id='buttonDetectorContainer'>
         <div id='detectorButtonLeft' class='detectorButton detectorButtonSelected' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText1", "assets/detector_off2.png", "assets/mobile_home.png");'>
@@ -107,8 +106,35 @@
     </div>
     <script src='js/global.js'></script>
     <script>
-      // TODO remove console
-      console.log('Loaded local');
+      const local = {};
+      // Elements to be hidden while loading
+      local.ids = ['downContainer', 'logo'];
+      local.classes = ['subtitle'];
+
+      local.elements = ((ids, classes) => {
+        const elements = ids.map(id => document.getElementById(id));
+        for (let k = 0; k < classes.length; k += 1) {
+          const currElems = document.getElementsByClassName(classes[k]);
+          for (let m = 0; m < currElems.length; m += 1) {
+            elements.push(currElems[m]);
+          }
+        }
+        return elements;
+      })(local.ids, local.classes);
+
+      // Hidding specified elements
+      // for (let k = 0; k < local.elements.length; k += 1) {
+      //   local.elements[k].style.visibility = 'hidden';
+      // }
+
+      // Showing specified elements (function called after load)
+      local.elements.show = () => {
+        for (let k = 0; k < local.elements.length; k += 1) {
+          console.log(local.elements[k].id);
+          
+          local.elements[k].style.visibility = 'visible';
+        }
+      }
     </script>
   </body>
   <html>

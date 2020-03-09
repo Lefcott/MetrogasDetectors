@@ -3,7 +3,6 @@ const home = {};
 home.screen = 'screen2';
 
 home.elements = {
-  shadowContainer: element.id('shadowContainer'),
   pageTitle: element.id('pageTitle'),
   logo: element.id('logo'),
   arrowDown: element.id('arrowDown'),
@@ -35,8 +34,6 @@ home.resize = () => {
   const imgWidth = innerWidth / 2;
   const imgHeight = innerHeight * imgHeightCoef;
   const maxSize = Math.max(imgWidth, imgHeight);
-
-  home.elements.shadowContainer.style.height = `${innerHeight * (1 + imgHeightCoef)}px`;
 
   home.elements.footer.style.top = `${imgHeight}px`;
   home.elements.footer.style.height = `${(1 - imgHeightCoef) * visualViewport.height}px`;

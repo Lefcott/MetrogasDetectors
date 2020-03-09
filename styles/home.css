@@ -26,17 +26,9 @@ body {
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
 }
 
-#shadowContainer {
-  position: absolute;
-  transform: translate(-50%);
-  left: 50%;
-  z-index: 1;
-  top: 0;
-  width: 100%;
-  box-shadow: inset 0px 0px 80px 80px rgba(200, 200, 200, 1);
-}
-
 #downContainer {
+  /* Sync this with script on html */
+  visibility: hidden;
   position: absolute;
   display: block;
   z-index: 2;
@@ -101,12 +93,16 @@ body {
 }
 
 #logo {
+  /* Sync this with script on html */
+  visibility: hidden;
   margin-top: 8px;
   margin-left: 38px;
   height: auto;
 }
 
 .subtitle {
+  /* Sync this with script on html */
+  visibility: hidden;
   display: inline-block;
   margin-left: 80px;
   font-family: 'GothamRegular', sans-serif;
@@ -136,7 +132,7 @@ body {
   transform: translate(-50%, 0);
   left: 49.4%;
   top: 20px;
-  width: 30px;
+  width: 6%;
   height: auto;
   cursor: pointer;
 }
@@ -147,7 +143,7 @@ body {
   height: auto;
   transform: translate(0, -50%);
   left: 55%;
-  top: 0;
+  top: -5%;
 }
 
 #plus {
@@ -155,7 +151,7 @@ body {
   width: 2.8%;
   height: auto;
   left: 76%;
-  top: 10%;
+  top: 5%;
   font-family: 'GothamLight', sans-serif;
   font-size: 6vw;
   font-weight: 600;
@@ -164,7 +160,7 @@ body {
 
 #mobile {
   position: absolute;
-  width: 10%;
+  width: 8%;
   height: auto;
   transform: translate(0, -50%);
   left: 85%;
@@ -364,4 +360,40 @@ body {
   width: 78%;
   height: auto;
   top: 118%;
+}
+
+#loader {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 42%;
+  top: 50%;
+  z-index: 3;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  border-radius: 50%;
+  box-shadow: 0 0 30px #fff;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(720deg); }
+}
+
+#shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+}
+
+.arrowH {
+  width: 8.5%;
+  height: auto;
 }
