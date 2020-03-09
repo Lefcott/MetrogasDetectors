@@ -195,6 +195,7 @@ body {
   border-style: solid;
   border-width: 1px;
   border-color: #ddd;
+  cursor: pointer;
 }
 
 .detectorButtonSelected {

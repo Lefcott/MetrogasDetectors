@@ -45,12 +45,15 @@
       <div class='button' id='button2'>Especificaciones<br>t&eacute;cnicas<br>></div>
     </div>
     <div id='soundContainer'>
+      <audio src='assets/sounds/sound0.wav' id='sound0'></audio>
+      <audio src='assets/sounds/sound1.wav' id='sound1'></audio>
+      <audio src='assets/sounds/sound2.wav' id='sound2'></audio>
       <div id='detectorRunningTitle'>Prob&aacute; el funcionamiento del detector<br>y la aplicaci&oacute;n mobile</div>
       <div id='buttonDetectorContainer'>
         <div id='detectorButtonLeft' class='detectorButton detectorButtonSelected'></div>
-        <div class='detectorButton'></div>
-        <div class='detectorButton'></div>
-        <div id='detectorButtonRight' class='detectorButton'></div>
+        <div class='detectorButton' onclick = 'actions.playSound("sound0");'></div>
+        <div class='detectorButton' onclick = 'actions.playSound("sound1");'></div>
+        <div id='detectorButtonRight' class='detectorButton' onclick = 'actions.playSound("sound2");'></div>
       </div>
       <img src='assets/mute.png' id='volume'></img>
       <img src='assets/detector_empty.png' id='detectorEmpty'></img>

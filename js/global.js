@@ -71,6 +71,7 @@ global.query = (() => {
 
 (() => {
   const scripts = [
+    'js/home/actions/playSound.js',
     'js/home/actions/scrollX.js',
     'js/home/actions/scrollY.js',
     'js/home/views/mobile.js',
