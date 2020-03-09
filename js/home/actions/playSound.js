@@ -10,6 +10,7 @@ actions.sound.play = (id, buttonId, buttonTextId, detectorSrc, mobileSrc) => {
     element.id('volume').setAttribute('src', 'assets/mute.png');
   }
   element.id('mobileHome').setAttribute('src', mobileSrc);
+  element.id('detectorEmpty').setAttribute('src', detectorSrc);
   if (actions.sound.currButton) {
     actions.sound.currButton.removeClass('detectorButtonSelected');
   }

@@ -50,22 +50,22 @@
       <audio src='assets/sounds/sound2.wav' id='sound2'></audio>
       <div id='detectorRunningTitle'>Prob&aacute; el funcionamiento del detector<br>y la aplicaci&oacute;n mobile</div>
       <div id='buttonDetectorContainer'>
-        <div id='detectorButtonLeft' class='detectorButton detectorButtonSelected' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText1", "", "assets/mobile_home.png");'>
-          <div class = 'detectorButtonText detectorButtonTextSelected' id = 'detectorButtonText1' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText1", "", "assets/mobile_home.png");'>OFF</div>
+        <div id='detectorButtonLeft' class='detectorButton detectorButtonSelected' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText1", "assets/detector_empty2.png", "assets/mobile_home.png");'>
+          <div class = 'detectorButtonText detectorButtonTextSelected' id = 'detectorButtonText1' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText1", "assets/detector_empty2.png", "assets/mobile_home.png");'>OFF</div>
         </div>
-        <div id='detectorButton2' class='detectorButton' onclick = 'actions.sound.play("sound0", "detectorButton2", "detectorButtonText2", "", "assets/mobile_risk1.png");'>
-          <div class = 'detectorButtonText' id = 'detectorButtonText2' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText2", "", "assets/mobile_risk1.png");'>NORMAL</div>
+        <div id='detectorButton2' class='detectorButton' onclick = 'actions.sound.play("sound0", "detectorButton2", "detectorButtonText2", "assets/detector_green.png", "assets/mobile_risk1.png");'>
+          <div class = 'detectorButtonText' id = 'detectorButtonText2' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText2", "assets/detector_green.png", "assets/mobile_risk1.png");'>NORMAL</div>
         </div>
-        <div id='detectorButton3' class='detectorButton' onclick = 'actions.sound.play("sound1", "detectorButton3", "detectorButtonText3", "", "assets/mobile_risk2.png");'>
-          <div class = 'detectorButtonText' id = 'detectorButtonText3' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText3", "", "assets/mobile_risk2.png");'>DETECI&Oacute;N GN</div>
+        <div id='detectorButton3' class='detectorButton' onclick = 'actions.sound.play("sound1", "detectorButton3", "detectorButtonText3", "assets/detector_yellow.png", "assets/mobile_risk2.png");'>
+          <div class = 'detectorButtonText' id = 'detectorButtonText3' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText3", "assets/detector_yellow.png", "assets/mobile_risk2.png");'>DETECI&Oacute;N GN</div>
         </div>
-        <div id='detectorButtonRight' class='detectorButton' onclick = 'actions.sound.play("sound2", "detectorButtonRight", "detectorButtonText4", "", "assets/mobile_risk3.png");'>
-          <div class = 'detectorButtonText' id = 'detectorButtonText4' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText3");'>DETECCI&Oacute;N CO</div>
+        <div id='detectorButtonRight' class='detectorButton' onclick = 'actions.sound.play("sound2", "detectorButtonRight", "detectorButtonText4", "assets/detector_red.png", "assets/mobile_risk3.png");'>
+          <div class = 'detectorButtonText' id = 'detectorButtonText4' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText3", "assets/detector_red.png", "assets/mobile_risk3.png");'>DETECCI&Oacute;N CO</div>
         </div>
       </div>
       <img src='assets/mute.png' id='volume'></img>
-      <img src='assets/detector_empty.png' id='detectorEmpty'></img>
-      <img src='assets/mobile_risk2.png' id='mobileHome'></img>
+      <img src='assets/detector_empty2.png' id='detectorEmpty'></img>
+      <img src='assets/mobile_home.png' id='mobileHome'></img>
     </div>
     <script src='js/global.js'></script>
   </body>
