@@ -42,7 +42,7 @@
       <div class='button' id='button1' onclick='actions.scrollX("soundContainer", "downContainer");'>Prob&aacute; el
         detector<br>en
         funcionamiento<br>></div>
-      <div class='button' id='button2'>Especificaciones<br>t&eacute;cnicas<br>></div>
+      <div class='button' id='button2' onclick='actions.scrollX("techContainer", "downContainer");'>Especificaciones<br>t&eacute;cnicas<br>></div>
     </div>
     <div id='soundContainer'>
       <audio src='assets/sounds/sound0.wav' id='sound0'></audio>
@@ -66,7 +66,27 @@
       <img src='assets/mute.png' id='volume'></img>
       <img src='assets/detector_off2.png' id='detectorEmpty'></img>
       <img src='assets/mobile_home.png' id='mobileHome'></img>
-      <img src='assets/arrowRight.png' id='arrowRight' onclick='actions.scrollX("downContainer", "soundContainer");'></img>
+      <img src='assets/arrowRight.png' class='arrowRight' onclick='actions.scrollX("downContainer", "soundContainer");'></img>
+    </div>
+    <div id = 'techContainer'>
+      <img src='assets/arrowRight.png' class='arrowRight' onclick='actions.scrollX("downContainer", "techContainer");'></img>
+      <div class = 'title techTitle' id = 'techTitle1'>Especificaciones<br>t&eacute;cnicas</div>
+      <div class = 'title techTitle' id = 'techTitle2'>Dimensiones<br>y peso</div>
+      <div id = 'techDescription'>
+        <ul>
+          <li>Lorem ipsum dolor sit</li>
+          <li>inceptos ac tincidunt mollis</li>
+          <li>Tincidunt gravida lacus</li>
+          <li>nisl libero proin</li>
+          <li>sociosqu primis litora tristique</li>
+          <li>venenatis placerat</li>
+          <li>ut posuere conubia habitasse</li>
+          <li>aoreet quisque dis</li>
+        </ul>
+      </div>
+      <img id = 'tech1' src = 'assets/tech1.png' />
+      <img id = 'tech2' src = 'assets/tech2.png' />
+      <img id = 'tech3' src = 'assets/tech3.png' />
     </div>
     <script src='js/global.js'></script>
   </body>

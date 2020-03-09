@@ -9,6 +9,7 @@ home.elements = {
   bigImage2: element.id('bigImage2'),
   downContainer: element.id('downContainer'),
   soundContainer: element.id('soundContainer'),
+  techContainer: element.id('techContainer'),
   bigImage3: element.id('bigImage3'),
   bigImage4: element.id('bigImage4')
 };
@@ -37,6 +38,9 @@ home.resize = () => {
   home.elements.soundContainer.style.width = `${innerWidth}px`;
   home.elements.soundContainer.style.height = `${innerHeight}px`;
   home.elements.soundContainer.style.top = `${innerHeight}px`;
+  home.elements.techContainer.style.width = `${innerWidth}px`;
+  home.elements.techContainer.style.height = `${innerHeight}px`;
+  home.elements.techContainer.style.top = `${innerHeight}px`;
   home.elements.bigImage3.setAttribute('height', innerHeight);
   home.elements.bigImage4.setAttribute('height', innerHeight);
 

@@ -1,14 +1,4 @@
 @font-face {
-  font-family: 'GothamBold';
-  src: url('../assets/fonts/GothamBold.ttf');
-}
-
-@font-face {
-  font-family: 'GothamSemiBold';
-  src: url('../assets/fonts/GothamSemiBold.ttf');
-}
-
-@font-face {
   font-family: 'GothamRegular';
   src: url('../assets/fonts/GothamRegular.ttf');
 }
@@ -95,10 +85,8 @@ body {
   top: 10px;
   font-size: 2.3vw;
   z-index: 2;
-  /* font: Medium 50px/60px Gotham Rounded; */
   font-family: 'GothamRegular', sans-serif;
   font-weight: bolder;
-  letter-spacing: 0;
   color: #072d61;
 }
 
@@ -278,7 +266,7 @@ body {
   top: 50%;
 }
 
-#arrowRight {
+.arrowRight {
   position: absolute;
   transform: translate(-100%, 0);
   width: 1.6%;
@@ -286,4 +274,62 @@ body {
   left: 95%;
   top: 7.5%;
   cursor: pointer;
+}
+
+#techContainer {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  background-color: #fff;
+  left: 100%;
+  transition: 0.9s;
+}
+
+.techTitle {
+  transform: translate(0, 0);
+  color: #072d61;
+}
+
+#techTitle1 {
+  left: 2.6%;
+  top: 5%;
+}
+
+#techDescription {
+  position: absolute;
+  left: 40%;
+  top: 5%;
+  font-family: 'GothamRegular', sans-serif;
+  color: #072d61;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+#techTitle2 {
+  left: 2.6%;
+  top: 50%;
+}
+
+#tech1 {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  width: 13%;
+  height: auto;
+}
+
+#tech2 {
+  position: absolute;
+  left: 62.5%;
+  top: 49%;
+  width: 11%;
+  height: auto;
+}
+
+#tech3 {
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  width: 13%;
+  height: auto;
 }
