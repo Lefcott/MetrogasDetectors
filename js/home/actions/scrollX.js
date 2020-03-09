@@ -8,4 +8,10 @@ actions.scrollX = (openId, closeId) => {
     closeTarget.style.left = '100%';
   }
   openTarget.style.left = '0';
+  if (openId === 'techContainer') {
+    openTarget.style.height = `${innerHeight * 1.5}px`;
+  }
+  if (closeId === 'techContainer') {
+    closeTarget.style.height = `${innerHeight}px`;
+  }
 };
