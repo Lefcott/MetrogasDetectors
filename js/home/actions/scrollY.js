@@ -2,13 +2,13 @@
 actions.scrollY = (direction, speed) => {
   document.body.scrollBy(0, direction * speed);
   if (direction === 1) {
-    if (document.body.scrollTop !== document.body.scrollHeight - innerHeight) {
+    if (document.body.scrollTop < document.body.scrollHeight - innerHeight) {
       requestAnimationFrame(() => {
         actions.scrollY(direction, speed);
       });
     }
   } else if (direction === -1) {
-    if (document.body.scrollTop > 10) {
+    if (document.body.scrollTop > 0) {
       requestAnimationFrame(() => {
         actions.scrollY(direction, speed);
       });
