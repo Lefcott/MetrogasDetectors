@@ -23,7 +23,19 @@ body {
 
 #downContainer {
   position: absolute;
+  display: block;
   z-index: 2;
+  left: 0;
+  transition: 0.9s;
+}
+
+#soundContainer {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  background-color: #ddd;
+  left: 100%;
+  transition: 0.9s;
 }
 
 #bigImage2 {

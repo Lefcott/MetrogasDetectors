@@ -8,6 +8,7 @@ home.elements = {
   bigImage1: element.id('bigImage1'),
   bigImage2: element.id('bigImage2'),
   downContainer: element.id('downContainer'),
+  soundContainer: element.id('soundContainer'),
   bigImage3: element.id('bigImage3'),
   bigImage4: element.id('bigImage4')
 };
@@ -32,6 +33,9 @@ home.resize = () => {
   home.elements.bigImage2.setAttribute('height', imgHeight);
   home.elements.downContainer.style.width = `${innerWidth}px`;
   home.elements.downContainer.style.top = `${innerHeight}px`;
+  home.elements.soundContainer.style.width = `${innerWidth}px`;
+  home.elements.soundContainer.style.height = `${innerHeight}px`;
+  home.elements.soundContainer.style.top = `${innerHeight}px`;
   home.elements.bigImage3.setAttribute('height', innerHeight);
   home.elements.bigImage4.setAttribute('height', innerHeight);
 
