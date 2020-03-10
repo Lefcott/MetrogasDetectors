@@ -58,3 +58,21 @@ const imageMapping = {
     }
   }
 })();
+
+if (!global.query.page) {
+  // IF THE PAGE IS HOME
+  const removables = document.getElementsByClassName('removeOnHome');
+  for (let k = 0; k < removables.length; k += 1) {
+    // removables[k].parentNode.removeChild(removables[k]);
+    removables[k].style.visibility = 'hidden';
+  }
+} else {
+  // IF THE PAGE IS NOT HOME (V1 OR V2)
+  document.getElementById('homeDetector1').parentNode.removeChild(document.getElementById('homeDetector1'));
+  document.getElementById('homeDetector2').parentNode.removeChild(document.getElementById('homeDetector2'));
+  document.getElementById('homeDetectorTitle1').parentNode.removeChild(document.getElementById('homeDetectorTitle1'));
+  document.getElementById('homeDetectorTitle2').parentNode.removeChild(document.getElementById('homeDetectorTitle2'));
+  document.getElementById('homeMobile').parentNode.removeChild(document.getElementById('homeMobile'));
+  document.getElementById('homeMobile2').parentNode.removeChild(document.getElementById('homeMobile2'));
+  document.getElementById('homeShadow').parentNode.removeChild(document.getElementById('homeShadow'));
+}

@@ -8,13 +8,13 @@
     <title>Detectores - MetroGas</title>
   </head>
 
-  <!-- TODO remove onkeypress -->
-  <body onresize='home.resize();' onselectstart='return false;' onkeypress="location = './index.html?page=' + global.query.page">
+  <body onresize='home.resize();' onselectstart='return false;'>
     <!-- Catching images -->
     <img src='assets/detector_empty.png' id = 'detectorEmptyCatched' style = 'display: none;'></img>
     <img src='assets/detector_green.png' id = 'detectorGreenCatched' style = 'display: none;'></img>
     <img src='assets/detector_yellow.png' id = 'detectorYellowCatched' style = 'display: none;'></img>
     <img src='assets/detector_red.png' id = 'detectorRedCatched' style = 'display: none;'></img>
+    <div id = 'homeShadow' class = 'removeOnPage'></div>
     <div id="shadow"></div>
     <div id="loader"></div>
     <img src="assets/bigImage1_Web.png" id='bigImage1Hidden' style='display: none;' />
@@ -26,6 +26,10 @@
       <image id = 'bigImage2Up' width='100' height='100' preserveAspectRatio="none" />
     </svg>
     <div class='title' id='pageTitle'>Sent&iacute; la tranquilidad de saber que<br>est&aacute;n bien, en todo momento</div>
+    <img src='assets/homeDetector_P2.png' id='homeDetector1' class = 'homeDetector removeOnPage' onclick = 'location = "./index.html?page=v2"'></img>
+    <img src='assets/homeDetector.png' id='homeDetector2' class = 'homeDetector removeOnPage' onclick = 'location = "./index.html?page=v1"'></img>
+    <div id='homeDetectorTitle1' class = 'removeOnPage'>Versi&oacute;n 1</div>
+    <div id='homeDetectorTitle2' class = 'removeOnPage'>Versi&oacute;n 2</div>
     <div id='footer'>
       <a href='https://www.metrogas.com.ar/'>
         <img src="assets/logo.png" id='logo' />
@@ -33,10 +37,12 @@
       <div class='subtitle'>NUEVO DETECTOR WI-FI<br>
         <div class='subtitle subsubtitle'>DE GAS NATURAL Y MON&Oacute;XIDO DE CARBONO</div>
       </div>
-      <img src='assets/arrowDown.png' id='arrowDown' onclick='actions.scrollY(1, 28);'></img>
-      <img id='detector'></img>
-      <div id='plus'>+</div>
-      <img src='assets/mobile_home.png' id='mobile'></img>
+      <img src='assets/arrowDown.png' id='arrowDown' onclick='actions.scrollY(1, 28);' class = 'removeOnHome'></img>
+      <img id='detector' class = 'removeOnHome'></img>
+      <div id='plus' class = 'removeOnHome'>+</div>
+      <img src='assets/mobile_home.png' id='mobile' class = 'removeOnHome'></img>
+      <img src='assets/mobile_home.png' id='homeMobile' class = 'removeOnPage'></img>
+      <img src='assets/mobile_risk1.png' id='homeMobile2' class = 'removeOnPage'></img>
     </div>
     <div id='downContainer'>
       <svg width='50%' viewBox="0 0 100 100" id='bigImage3' preserveAspectRatio="none">
@@ -80,14 +86,16 @@
       <div class = 'title techTitle' id = 'techTitle2'>Dimensiones<br>y peso</div>
       <div id = 'techDescription'>
         <ul>
-          <li>Peso: 150gr.</li>
-          <li>inceptos ac tincidunt mollis</li>
-          <li>Tincidunt gravida lacus</li>
-          <li>nisl libero proin</li>
-          <li>sociosqu primis litora tristique</li>
-          <li>venenatis placerat</li>
-          <li>ut posuere conubia habitasse</li>
-          <li>aoreet quisque dis</li>
+          <li>Gas detectado: Monóxido de Carbono (CO.) - Gas Natural (CH4)</li>
+          <li>Tensión de alimentación: 5Vdc con fuente externa de 220 Vca. +/- 5%/50Hz</li>
+          <li>Consumo: 100 mA</li>
+          <li>Temperatura ambiente: 0°C a +40 C</li>
+          <li>Humedad relativa ambiente: 40% HR al 90% HR</li>
+          <li>Señales de alarma CO: Sonora (tono continuo) LED Rojo encendido</li>
+          <li>Disparo de alarma GN (o CH4): 5% LIE 0,25% Gas en aire</li>
+          <li>Señales de alarma GN (o CH4): Sonora (tono continuo) LED Amarillo encendido</li>
+          <li>Testeo/Reseteo de alarma: Manual</li>
+          <li>Peso: 150 grs. aprox. (sin fuente externa)</li>
         </ul>
       </div>
       <img id = 'tech1' />
