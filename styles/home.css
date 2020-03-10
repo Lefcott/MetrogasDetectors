@@ -455,7 +455,7 @@ body {
   width: 100%;
   /* Update this prop with home.js -> imgHeightCoef */
   height: 82%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 3;
 }
 
