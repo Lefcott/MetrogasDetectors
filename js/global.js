@@ -1,5 +1,6 @@
 const global = {};
 const actions = {};
+const images = {};
 
 global.private = {};
 global.loadScripts = (arrScripts, start) => {
@@ -61,7 +62,6 @@ const element = {
     const elem = document.getElementById(id);
     if (!elem) {
       throw new Error(`Element with id "${id}" not found.`);
-      return;
     }
     elem.prevStyle = elem.prevStyle || {};
     elem.changeStyle = elem.changeStyle || global.private.changeStyle(elem);
@@ -93,6 +93,7 @@ global.query = (() => {
 
 (() => {
   const scripts = [
+    { file: 'js/home/actions/loadImages.js' },
     { file: 'js/home/actions/loadDetector.js' },
     { file: 'js/home/actions/playSound.js' },
     { file: 'js/home/actions/scrollX.js' },
