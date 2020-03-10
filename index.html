@@ -8,21 +8,22 @@
     <title>Detectores - MetroGas</title>
   </head>
 
-  <body onresize='home.resize();' onselectstart='return false;'>
+  <!-- TODO remove onkeypress -->
+  <body onresize='home.resize();' onselectstart='return false;' onkeypress="location = './index.html?page=' + global.query.page">
     <!-- Catching images -->
-    <img src='assets/detector_empty.png' style = 'display: none;'></img>
-    <img src='assets/detector_green.png' style = 'display: none;'></img>
-    <img src='assets/detector_yellow.png' style = 'display: none;'></img>
-    <img src='assets/detector_red.png' style = 'display: none;'></img>
+    <img src='assets/detector_empty.png' id = 'detectorEmptyCatched' style = 'display: none;'></img>
+    <img src='assets/detector_green.png' id = 'detectorGreenCatched' style = 'display: none;'></img>
+    <img src='assets/detector_yellow.png' id = 'detectorYellowCatched' style = 'display: none;'></img>
+    <img src='assets/detector_red.png' id = 'detectorRedCatched' style = 'display: none;'></img>
     <div id="shadow"></div>
     <div id="loader"></div>
     <img src="assets/bigImage1_Web.png" id='bigImage1Hidden' style='display: none;' />
-    <img src="assets/bigImage2_Web.png" id='bigImage2Hidden' style='display: none;' />
+    <img id='bigImage2Hidden' style='display: none;' />
     <svg width='50%' viewBox="0 0 100 100" id='bigImage1' preserveAspectRatio="none">
       <image xlink:href="assets/bigImage1_Web.png" width='100' height='100' preserveAspectRatio="none" />
     </svg>
     <svg width='50%' viewBox="0 0 100 100" id='bigImage2' preserveAspectRatio="none">
-      <image href="assets/bigImage2_Web.png" width='100' height='100' preserveAspectRatio="none" />
+      <image id = 'bigImage2Up' width='100' height='100' preserveAspectRatio="none" />
     </svg>
     <div class='title' id='pageTitle'>Sent&iacute; la tranquilidad de saber que<br>est&aacute;n bien, en todo momento</div>
     <div id='footer'>
@@ -42,7 +43,7 @@
         <image href="assets/bigImage1_Web.png" width='100' height='100' preserveAspectRatio="none" />
       </svg>
       <svg width='50%' viewBox="0 0 100 100" id='bigImage4' preserveAspectRatio="none">
-        <image href="assets/bigImage2_Web.png" width='100' height='100' preserveAspectRatio="none" />
+        <image id = 'bigImage2Down' width='100' height='100' preserveAspectRatio="none" />
       </svg>
       <div id='svgOverlay'></div>
       <img src='assets/arrowUp.png' id='arrowUp' onclick='actions.scrollY(-1, 28);'></img>
@@ -62,10 +63,10 @@
           <div class = 'detectorButtonText' id = 'detectorButtonText2' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText2", "assets/detector_green.png", "assets/mobile_risk1.png");'>NORMAL</div>
         </div>
         <div id='detectorButton3' class='detectorButton' onclick = 'actions.sound.play("sound1", "detectorButton3", "detectorButtonText3", "assets/detector_yellow.png", "assets/mobile_risk2.png");'>
-          <div class = 'detectorButtonText' id = 'detectorButtonText3' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText3", "assets/detector_yellow.png", "assets/mobile_risk2.png");'>DETECI&Oacute;N GN</div>
+          <div class = 'detectorButtonText' id = 'detectorButtonText3' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText3", "assets/detector_yellow.png", "assets/mobile_risk2.png");'>DETECI&Oacute;N<br>GN</div>
         </div>
         <div id='detectorButtonRight' class='detectorButton' onclick = 'actions.sound.play("sound2", "detectorButtonRight", "detectorButtonText4", "assets/detector_red.png", "assets/mobile_risk3.png");'>
-          <div class = 'detectorButtonText' id = 'detectorButtonText4' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText3", "assets/detector_red.png", "assets/mobile_risk3.png");'>DETECCI&Oacute;N CO</div>
+          <div class = 'detectorButtonText' id = 'detectorButtonText4' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText3", "assets/detector_red.png", "assets/mobile_risk3.png");'>DETECCI&Oacute;N<br>CO</div>
         </div>
       </div>
       <img src='assets/mute2.png' id='volume' onclick = 'actions.sound.mute();'></img>
@@ -89,9 +90,9 @@
           <li>aoreet quisque dis</li>
         </ul>
       </div>
-      <img id = 'tech1' src = 'assets/tech1.png' />
-      <img id = 'tech2' src = 'assets/tech2.png' />
-      <img id = 'tech3' src = 'assets/tech3.png' />
+      <img id = 'tech1' />
+      <!-- <img id = 'tech2' />
+      <img id = 'tech3' /> -->
       <div class = 'title techTitle' id = 'techTitle3'>Contenido<br>de la caja</div>
       <div id = 'techBoxDescription'>
         <ul class = 'techList'>
@@ -107,7 +108,7 @@
           <li>Manual de usuario</li>
         </ul>
       </div>
-      <img id = 'techBig' src = 'assets/techBig.png' />
+      <img id = 'techBig' />
     </div>
     <script src='js/global.js'></script>
     <script>

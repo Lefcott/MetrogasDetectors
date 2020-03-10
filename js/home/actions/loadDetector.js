@@ -5,9 +5,9 @@ actions.detector.buttonContainer = element.id('buttonDetectorContainer');
 
 actions.detector.load = () => {
   const { buttons, buttonContainer } = actions.detector;
-  const heightCoef = 0.095;
+  const heightCoef = 0.1;
 
-  buttonContainer.style.width = '48%';
+  buttonContainer.style.width = '33.5%';
   setTimeout(() => {
     const containerWidth = buttonContainer.offsetWidth;
     const buttonWidth = containerWidth / buttons.length;
