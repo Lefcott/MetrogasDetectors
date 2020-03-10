@@ -60,6 +60,7 @@ const imageMapping = {
 })();
 
 if (!global.query.page) {
+  document.getElementById('pageTitle').style.display = 'none';
   // IF THE PAGE IS HOME
   document.body.style.overflow = 'hidden';
   const removables = document.getElementsByClassName('removeOnHome');
