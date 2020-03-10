@@ -37,7 +37,7 @@ const imageMapping = {
   //           DEFINE PAGE HERE
   // --------------------------------------
   // --------------------------------------
-  const currentPage = global.query.page;
+  const currentPage = global.query.page || 'v2';
   // Key: page, Value: object: { Key: img id, value: img src }
   if (!imageMapping[currentPage]) {
     console.error(

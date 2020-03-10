@@ -9,7 +9,7 @@ web.resize = () => {
   home.elements.arrowLeft.changeStyle({ width: '1.5%' });
   home.elements.buttons.changeStyle({ fontSize: '2.6vw' });
   home.elements.techTitles.changeStyle({ fontSize: '2.5vw' });
-  home.elements.techDescription.changeStyle({ fontSize: '1.8vw', top: '10%', lineHeight: '30px' });
+  home.elements.techDescription.changeStyle({ fontSize: '1.25vw', top: '4.8%', lineHeight: '42px' });
   home.elements.techBoxDescription.changeStyle({ fontSize: '1.8vw', lineHeight: '30px' });
   home.elements.techTitle3.style.top = '100%';
 };
