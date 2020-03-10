@@ -17,7 +17,7 @@ body {
   margin: 0;
   position: relative;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 }
 
 #pageTitle {
@@ -257,7 +257,7 @@ body {
   width: 45%;
   height: auto;
   left: 30%;
-  top: 60%;
+  top: 68%;
 }
 
 #mobileHome {
@@ -266,7 +266,7 @@ body {
   width: 19%;
   height: auto;
   left: 67.45%;
-  top: 67%;
+  top: 70%;
 }
 
 .arrowLeft {
@@ -280,7 +280,7 @@ body {
 
 #techContainer {
   position: absolute;
-  overflow: hidden;
+  overflow: visible;
   display: block;
   z-index: 2;
   background-color: #fff;
@@ -301,7 +301,7 @@ body {
 
 #techDescription {
   position: absolute;
-  left: 26%;
+  left: 35%;
   font-family: 'GothamRegular', sans-serif;
   color: #072d61;
   font-weight: bold;
@@ -314,9 +314,9 @@ body {
 
 #tech1 {
   position: absolute;
-  left: 40%;
-  top: 64%;
-  width: 52%;
+  left: 34.55%;
+  top: 58%;
+  width: 57.1%;
   height: auto;
 }
 
