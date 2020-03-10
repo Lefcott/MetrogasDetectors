@@ -16,13 +16,13 @@
     <img src='assets/detector_red.png' style = 'display: none;'></img>
     <div id="shadow"></div>
     <div id="loader"></div>
-    <img src="assets/bigImage1_Web.jpg" id='bigImage1Hidden' style='display: none;' />
-    <img src="assets/bigImage2_Web.jpg" id='bigImage2Hidden' style='display: none;' />
+    <img src="assets/bigImage1_Web.png" id='bigImage1Hidden' style='display: none;' />
+    <img src="assets/bigImage2_Web.png" id='bigImage2Hidden' style='display: none;' />
     <svg width='50%' viewBox="0 0 100 100" id='bigImage1' preserveAspectRatio="none">
-      <image xlink:href="assets/bigImage1_Web.jpg" width='100' height='100' preserveAspectRatio="none" />
+      <image xlink:href="assets/bigImage1_Web.png" width='100' height='100' preserveAspectRatio="none" />
     </svg>
     <svg width='50%' viewBox="0 0 100 100" id='bigImage2' preserveAspectRatio="none">
-      <image href="assets/bigImage2_Web.jpg" width='100' height='100' preserveAspectRatio="none" />
+      <image href="assets/bigImage2_Web.png" width='100' height='100' preserveAspectRatio="none" />
     </svg>
     <div class='title' id='pageTitle'>Sent&iacute; la tranquilidad de saber que<br>est&aacute;n bien, en todo momento</div>
     <div id='footer'>
@@ -39,10 +39,10 @@
     </div>
     <div id='downContainer'>
       <svg width='50%' viewBox="0 0 100 100" id='bigImage3' preserveAspectRatio="none">
-        <image href="assets/bigImage1_Web.jpg" width='100' height='100' preserveAspectRatio="none" />
+        <image href="assets/bigImage1_Web.png" width='100' height='100' preserveAspectRatio="none" />
       </svg>
       <svg width='50%' viewBox="0 0 100 100" id='bigImage4' preserveAspectRatio="none">
-        <image href="assets/bigImage2_Web.jpg" width='100' height='100' preserveAspectRatio="none" />
+        <image href="assets/bigImage2_Web.png" width='100' height='100' preserveAspectRatio="none" />
       </svg>
       <div id='svgOverlay'></div>
       <img src='assets/arrowUp.png' id='arrowUp' onclick='actions.scrollY(-1, 28);'></img>
@@ -68,7 +68,7 @@
           <div class = 'detectorButtonText' id = 'detectorButtonText4' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText3", "assets/detector_red.png", "assets/mobile_risk3.png");'>DETECCI&Oacute;N CO</div>
         </div>
       </div>
-      <img src='assets/mute.png' id='volume' onclick = 'actions.sound.mute();'></img>
+      <img src='assets/mute2.png' id='volume' onclick = 'actions.sound.mute();'></img>
       <img src='assets/detector_empty.png' id='detectorEmpty'></img>
       <img src='assets/mobile_home.png' id='mobileHome'></img>
       <img src='assets/arrowLeft.png' class='arrowLeft' onclick='actions.scrollX("downContainer", "soundContainer");'></img>
@@ -135,8 +135,6 @@
       // Showing specified elements (function called after load)
       local.elements.show = () => {
         for (let k = 0; k < local.elements.length; k += 1) {
-          console.log(local.elements[k].id);
-          
           local.elements[k].style.visibility = 'visible';
         }
       }

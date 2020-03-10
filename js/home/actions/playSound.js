@@ -10,10 +10,10 @@ actions.sound.play = (id, buttonId, buttonTextId, detectorSrc, mobileSrc) => {
     actions.sound.canEnable = true;
     if (actions.sound.enabled) {
       element.id(id).play();
-      element.id('volume').setAttribute('src', 'assets/volume.png');
+      element.id('volume').setAttribute('src', 'assets/volume2.png');
     }
   } else {
-    element.id('volume').setAttribute('src', 'assets/mute.png');
+    element.id('volume').setAttribute('src', 'assets/mute2.png');
     actions.sound.stop();
     actions.sound.canEnable = false;
   }
@@ -43,14 +43,10 @@ actions.sound.mute = () => {
     actions.sound.enabled = !actions.sound.enabled;
     if (actions.sound.enabled) {
       element.id(actions.sound.currId).play();
-      element.id('volume').setAttribute('src', 'assets/volume.png');
-      // TODO remove console
-      console.log('Enabled');
+      element.id('volume').setAttribute('src', 'assets/volume2.png');
     } else {
       actions.sound.stop();
-      element.id('volume').setAttribute('src', 'assets/mute.png');
-      // TODO remove console
-      console.log('Disabled');
+      element.id('volume').setAttribute('src', 'assets/mute2.png');
     }
   }
 };

@@ -174,17 +174,18 @@ body {
   background-color: #fff;
   left: 150%;
   transition: 0.9s;
+  overflow-y: scroll;
 }
 
 #detectorRunningTitle {
   position: absolute;
   transform: translate(-50%);
   left: 50%;
+  width: 100%;
   text-align: center;
   margin-left: 20px;
   margin-top: 25px;
   font-family: Quicksand;
-  font-size: 2.2vw;
   font-weight: bolder;
   color: #072d61;
 }
@@ -254,7 +255,7 @@ body {
 #detectorEmpty {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 45%;
   height: auto;
   left: 30%;
   top: 60%;

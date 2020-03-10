@@ -14,6 +14,7 @@ home.elements = {
   bigImage2: element.id('bigImage2'),
   downContainer: element.id('downContainer'),
   soundContainer: element.id('soundContainer'),
+  detectorRunningTitle: element.id('detectorRunningTitle'),
   techContainer: element.id('techContainer'),
   techDescription: element.id('techDescription'),
   techBoxDescription: element.id('techBoxDescription'),
