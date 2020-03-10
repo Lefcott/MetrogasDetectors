@@ -488,7 +488,7 @@ body {
   position: absolute;
   left: 21%;
   top: 51%;
-  z-index: 6;
+  z-index: 3;
   font-family: 'GothamSemiBold', sans-serif;
   font-size: 2.5vw;
   color: #fff;
@@ -498,7 +498,7 @@ body {
   position: absolute;
   left: 69%;
   top: 51%;
-  z-index: 6;
+  z-index: 3;
   font-family: 'GothamSemiBold', sans-serif;
   color: #fff;
   font-size: 2.5vw;
