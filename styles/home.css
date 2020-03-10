@@ -8,6 +8,21 @@
   src: url('../assets/fonts/GothamLight.ttf');
 }
 
+@font-face {
+  font-family: 'GothamSemiBold';
+  src: url('../assets/fonts/GothamSemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('../assets/fonts/GothamMedium.otf');
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url('../assets/fonts/GothamBook.otf');
+}
+
 html {
   overflow-x: hidden;
 }
@@ -17,7 +32,6 @@ body {
   margin: 0;
   position: relative;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
 }
 
 #pageTitle {
@@ -58,9 +72,9 @@ body {
 .button {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
-  font-family: 'GothamRegular', sans-serif;
-  font-weight: bolder;
+  top: 60%;
+  font-family: 'GothamMedium', sans-serif;
+  font-weight: normal;
   text-align: center;
   color: #fff;
   cursor: pointer;
@@ -71,6 +85,7 @@ body {
 }
 
 #button2 {
+  top: 59%;
   left: 75%;
 }
 
@@ -95,7 +110,7 @@ body {
 #logo {
   /* Sync this with script on html */
   visibility: hidden;
-  margin-top: 8px;
+  margin-top: 1%;
   margin-left: 2.6%;
   height: auto;
 }
@@ -106,7 +121,7 @@ body {
   display: inline-block;
   margin-left: 80px;
   font-family: 'GothamRegular', sans-serif;
-  font-size: 3.2vh;
+  font-size: 3.8vh;
   font-weight: bolder;
   margin-top: 0;
   color: #072d61;
@@ -114,8 +129,23 @@ body {
 
 .subsubtitle {
   margin-left: 0;
-  font-size: 1.6vh;
+  font-size: 2vh;
   font-family: 'GothamLight', sans-serif;
+}
+
+#arrowRight1 {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  top: 90%;
+  width: 5.3%;
+}
+
+#arrowRight2 {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  top: 120%;
 }
 
 #arrowDown {
@@ -138,49 +168,47 @@ body {
 
 #detector {
   position: absolute;
-  width: 20%;
+  width: 23%;
   height: auto;
   transform: translate(0, -50%);
   left: 55%;
-  top: -5%;
+  top: 10%;
 }
 
 #plus {
   position: absolute;
-  width: 2.8%;
   height: auto;
-  left: 76%;
-  top: 5%;
-  font-family: 'GothamLight', sans-serif;
-  font-size: 6vw;
-  font-weight: 600;
+  left: 77.5%;
+  top: 3%;
+  font-family: 'GothamBook', sans-serif;
+  font-size: 4.2vw;
   color: #072D61;
 }
 
 #mobile {
   position: absolute;
-  width: 8%;
+  width: 9%;
   height: auto;
   transform: translate(0, -50%);
   left: 85%;
-  top: 0;
+  top: 2%;
 }
 
 #homeMobile {
   position: absolute;
-  width: 8%;
+  width: 9.5%;
   height: auto;
   transform: translate(0, -50%);
-  left: 70%;
+  left: 64%;
   top: 0;
 }
 
 #homeMobile2 {
   position: absolute;
-  width: 8%;
+  width: 9.5%;
   height: auto;
   transform: translate(0, -50%);
-  left: 80%;
+  left: 75%;
   top: 0;
 }
 
@@ -191,6 +219,7 @@ body {
   background-color: #fff;
   left: 150%;
   transition: 0.9s;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
@@ -263,7 +292,7 @@ body {
   transform: translate(-50%, 0);
   left: 50%;
   top: 36%;
-  width: 6.5%;
+  width: 6.2%;
   z-index: 2;
   height: auto;
   cursor: pointer;
@@ -272,7 +301,7 @@ body {
 #detectorEmpty {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 45%;
+  width: 40%;
   height: auto;
   left: 30%;
   top: 68%;
@@ -284,7 +313,7 @@ body {
   width: 19%;
   height: auto;
   left: 67.45%;
-  top: 70%;
+  top: 67%;
 }
 
 .arrowLeft {
@@ -304,37 +333,45 @@ body {
   background-color: #fff;
   left: 150%;
   transition: 0.9s;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
 .techTitle {
   transform: translate(0, 0);
   color: #072d61;
+  font-family: 'GothamMedium', sans-serif;
+  font-weight: normal;
 }
 
 #techTitle1 {
-  left: 2.6%;
-  top: 9%;
+  left: 6%;
+  top: 4%;
 }
 
 #techDescription {
   position: absolute;
   left: 33.33%;
-  font-family: 'GothamRegular', sans-serif;
+  font-family: 'GothamMedium', sans-serif;
   color: #072d61;
-  font-weight: bold;
+  font-weight: normal;
+}
+.ulText {
+  display: inline-block;
+  font-family: 'GothamBook', sans-serif;
+  font-weight: normal;
 }
 
 #techTitle2 {
-  left: 2.6%;
-  top: 64%;
+  left: 6%;
+  top: 68%;
 }
 
 #tech1 {
   position: absolute;
-  left: 34.55%;
-  top: 58%;
-  width: 57.1%;
+  left: 35%;
+  top: 68%;
+  width: 55%;
   height: auto;
 }
 
@@ -355,8 +392,8 @@ body {
 }
 
 #techTitle3 {
-  left: 2.6%;
-  top: 100%;
+  left: 6%;
+  top: 123%;
 }
 
 .techList {
@@ -365,19 +402,19 @@ body {
 
 #techBoxDescription {
   position: absolute;
-  left: 20%;
-  top: 100%;
-  font-family: 'GothamRegular', sans-serif;
+  left: 45%;
+  top: 170%;
+  font-family: 'GothamMedium', sans-serif;
   color: #072d61;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 #techBig {
   position: absolute;
-  left: 15%;
+  left: 24%;
   width: 78%;
   height: auto;
-  top: 118%;
+  top: 100%;
 }
 
 #loader {
@@ -431,9 +468,9 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 25%;
-  top: 200px;
+  top: 30%;
   z-index: 3;
-  width: 80%;
+  width: 50%;
   cursor: pointer;
 }
 
@@ -441,28 +478,48 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 75%;
-  top: 200px;
+  top: 30%;
   z-index: 3;
-  width: 80%;
+  width: 50%;
   cursor: pointer;
 }
 
 #homeDetectorTitle1 {
   position: absolute;
-  left: 20%;
-  top: 410px;
+  left: 21%;
+  top: 51%;
   z-index: 6;
-  font-family: 'GothamRegular', sans-serif;
-  font-size: 3vw;
+  font-family: 'GothamSemiBold', sans-serif;
+  font-size: 2.5vw;
   color: #fff;
 }
 
 #homeDetectorTitle2 {
   position: absolute;
   left: 69%;
-  top: 410px;
+  top: 51%;
   z-index: 6;
-  font-family: 'GothamRegular', sans-serif;
+  font-family: 'GothamSemiBold', sans-serif;
   color: #fff;
-  font-size: 3vw;
+  font-size: 2.5vw;
+}
+
+#line1 {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  width: 88%;
+  border-width: 0.8px;
+  top: 60%;
+  z-index: 2;
+}
+
+#line2 {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  width: 88%;
+  border-width: 0.4px;
+  top: 102%;
+  z-index: 2;
 }

@@ -3,16 +3,13 @@ actions.scrollX = (openId, closeId) => {
   const closeTarget = element.id(closeId);
 
   if (closeId === 'downContainer') {
+    actions.scrollY(1, 28);
+    document.body.style.overflowY = 'hidden';
     closeTarget.style.left = '-110%';
   } else {
+    document.body.style.overflowY = 'scroll';
     closeTarget.style.left = '150%';
   }
   openTarget.style.left = '0';
   actions.sound.stop();
-  // if (openId === 'techContainer') {
-  //   openTarget.style.height = `${innerHeight * 2}px`;
-  // }
-  // if (closeId === 'techContainer') {
-  //   closeTarget.style.height = `${innerHeight}px`;
-  // }
 };

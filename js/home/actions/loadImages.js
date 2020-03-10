@@ -61,6 +61,7 @@ const imageMapping = {
 
 if (!global.query.page) {
   // IF THE PAGE IS HOME
+  document.body.style.overflow = 'hidden';
   const removables = document.getElementsByClassName('removeOnHome');
   for (let k = 0; k < removables.length; k += 1) {
     // removables[k].parentNode.removeChild(removables[k]);

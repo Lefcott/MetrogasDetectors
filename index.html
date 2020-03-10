@@ -53,8 +53,8 @@
       </svg>
       <div id='svgOverlay'></div>
       <img src='assets/arrowUp.png' id='arrowUp' onclick='actions.scrollY(-1, 28);'></img>
-      <div class='button' id='button1' onclick='actions.scrollX("soundContainer", "downContainer");'>Prob&aacute; el detector<br>en funcionamiento<br><img src = 'assets/arrowRight.png' class = 'arrowH' /></div>
-      <div class='button' id='button2' onclick='actions.scrollX("techContainer", "downContainer");'>Especificaciones<br>t&eacute;cnicas<br><img src = 'assets/arrowRight.png' class = 'arrowH' /></div>
+      <div class='button' id='button1' onclick='actions.scrollX("soundContainer", "downContainer");'>Prob&aacute; el detector<br>en funcionamiento<br><br><img src = 'assets/arrowRight.png' id = 'arrowRight1' class = 'arrowH' /></div>
+      <div class='button' id='button2' onclick='actions.scrollX("techContainer", "downContainer");'>Especificaciones<br>t&eacute;cnicas<br><img id = 'arrowRight2' src = 'assets/arrowRight.png' class = 'arrowH' /></div>
     </div>
     <div id='soundContainer'>
       <audio src='assets/sounds/sound0.wav' id='sound0' onended = 'event.target.play();'></audio>
@@ -86,18 +86,20 @@
       <div class = 'title techTitle' id = 'techTitle2'>Dimensiones<br>y peso</div>
       <div id = 'techDescription'>
         <ul>
-          <li>Gas detectado: Monóxido de Carbono (CO.) - Gas Natural (CH4)</li>
-          <li>Tensión de alimentación: 5Vdc con fuente externa de 220 Vca. +/- 5%/50Hz</li>
-          <li>Consumo: 100 mA</li>
-          <li>Temperatura ambiente: 0°C a +40 C</li>
-          <li>Humedad relativa ambiente: 40% HR al 90% HR</li>
-          <li>Señales de alarma CO: Sonora (tono continuo) LED Rojo encendido</li>
-          <li>Disparo de alarma GN (o CH4): 5% LIE 0,25% Gas en aire</li>
-          <li>Señales de alarma GN (o CH4): Sonora (tono continuo) LED Amarillo encendido</li>
-          <li>Testeo/Reseteo de alarma: Manual</li>
-          <li>Peso: 150 grs. aprox. (sin fuente externa)</li>
+          <li>Gas detectado: <div class = 'ulText'>Mon&oacute;xido de Carbono (CO.) - Gas Natural (CH4)</div></li>
+          <li>Tensi&oacute;n de alimentaci&oacute;n: <div class = 'ulText'>5Vdc con fuente externa de 220 Vca. +/- 5%/50Hz</div></li>
+          <li>Consumo: <div class = 'ulText'>100 mA</div></li>
+          <li>Temperatura ambiente: <div class = 'ulText'>0°C a +40 C</div></li>
+          <li>Humedad relativa ambiente: <div class = 'ulText'>40% HR al 90% HR</div></li>
+          <li>Se&ntilde;ales de alarma CO: <div class = 'ulText'>Sonora (tono continuo) LED Rojo encendido</div></li>
+          <li>Disparo de alarma GN (o CH4): <div class = 'ulText'>5% LIE 0,25% Gas en aire</div></li>
+          <li>Se&ntilde;ales de alarma GN (o CH4): <div class = 'ulText'>Sonora (tono continuo) LED Amarillo encendido</div></li>
+          <li>Testeo/Reseteo de alarma: <div class = 'ulText'>Manual</div></li>
+          <li>Peso: <div class = 'ulText'>150 grs. aprox. (sin fuente externa)</div></li>
         </ul>
       </div>
+      <hr id = 'line1'></hr>
+      <hr id = 'line2'></hr>
       <img id = 'tech1' />
       <!-- <img id = 'tech2' />
       <img id = 'tech3' /> -->
