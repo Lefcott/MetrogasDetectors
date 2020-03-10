@@ -3,10 +3,10 @@ const web = {};
 web.resize = () => {
   home.elements.pageTitle.style.fontSize = '2.3vw';
   home.elements.logo.style.width = '17%';
-  home.elements.arrowDown.style.width = '3.2%';
+  home.elements.arrowDown.style.width = '2.05%';
   home.elements.arrowUp.style.width = '3.2%';
   home.elements.detectorRunningTitle.style.fontSize = '2.2vw'
-  home.elements.arrowLeft.changeStyle({ width: '3.2%' });
+  home.elements.arrowLeft.changeStyle({ width: '2.3%' });
   home.elements.buttons.changeStyle({ fontSize: '2.6vw' });
   home.elements.techTitles.changeStyle({ fontSize: '2.5vw' });
   home.elements.techDescription.changeStyle({ fontSize: '1.8vw', top: '10%', lineHeight: '30px' });
