@@ -4,7 +4,7 @@ web.resize = () => {
   home.elements.pageTitle.style.fontSize = '2.6vw';
   home.elements.logo.style.width = '12%';
   home.elements.arrowDown.style.width = '2.05%';
-  home.elements.arrowUp.style.width = '2%';
+  home.elements.arrowUp.changeStyle({ width: '2%' });
   home.elements.detectorRunningTitle.style.fontSize = '2.4vw'
   home.elements.arrowLeft.changeStyle({ width: '1.2%' });
   home.elements.buttons.changeStyle({ fontSize: '2.6vw' });

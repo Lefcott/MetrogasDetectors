@@ -6,7 +6,7 @@ home.elements = {
   pageTitle: element.id('pageTitle'),
   logo: element.id('logo'),
   arrowDown: element.id('arrowDown'),
-  arrowUp: element.id('arrowUp'),
+  arrowUp: element.class('arrowUp'),
   arrowLeft: element.class('arrowLeft'),
   buttons: element.class('button'),
   footer: element.id('footer'),
