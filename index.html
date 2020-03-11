@@ -136,7 +136,9 @@
         }).catch(function() {
             console.log('failed to initialize');
         });
-        keycloak.login()
+        if (location.href.endsWith('index.html')) {
+          keycloak.login()
+        }
     </script>
     <!-- <script type="text/javascript">
       const keycloak = Keycloak({
