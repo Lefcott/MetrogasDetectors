@@ -133,19 +133,14 @@
         });
         keycloak.enableLogging = true;
         keycloak.init({ promiseType: 'native' }).then(function(authenticated) {
-            console.log(authenticated ? 'authenticated' : 'not authenticated');
+          console.log(authenticated ? 'authenticated' : 'not authenticated');
+          if (!authenticated) {
+            console.log('Logging in');
+            keycloak.login();
+          }
         }).catch(function() {
             console.log('failed to initialize');
         });
-        if (!location.href.includes('#state=')) {
-          console.log('Redirect to login, user info:');
-          keycloak.loadUserInfo().then(data => {
-            console.log('Auth:', keycloak.authenticated);
-            if (!keycloak.authenticated) {
-              keycloak.login();
-            }
-          }).catch(console.log);
-        }
     </script>
     <!-- <script type="text/javascript">
       const keycloak = Keycloak({
