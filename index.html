@@ -140,8 +140,8 @@
         if (!location.href.includes('#state=')) {
           console.log('Redirect to login, user info:');
           keycloak.loadUserInfo().then(data => {
+            console.log('Auth:', keycloak.authenticated);
             if (!keycloak.authenticated) {
-              console.log('Auth:', keycloak.authenticated);
               keycloak.login();
             }
           }).catch(console.log);
