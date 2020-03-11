@@ -137,6 +137,7 @@
             console.log('failed to initialize');
         });
         if (!location.href.includes('#state=')) {
+          console.log('Redirect to login');
           keycloak.login()
         }
     </script>
