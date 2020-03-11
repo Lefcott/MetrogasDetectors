@@ -139,8 +139,7 @@
         });
         if (!location.href.includes('#state=')) {
           console.log('Redirect to login, user info:');
-          console.log(keycloak.loadUserInfo());
-          console.log(keycloak.authenticated);
+          keycloak.loadUserInfo().then(data => console.log(keycloak.authenticated)).catch(console.log);
           setTimeout(() => {
             console.log(keycloak.authenticated);
           }, 5000);
