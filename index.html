@@ -6,6 +6,10 @@
     <link rel='stylesheet' type='text/css' href='./styles/home.css' />
     <link rel='icon' href='assets/favicon.ico'>
     <title>Detectores - MetroGas</title>
+  </head>
+
+  <body onresize='home.resize();' onselectstart='return false;'>
+    <!-- Login with KeyCloak -->
     <script src='js/libraries/keycloak.js'></script>
     <script>
         const keycloak = new Keycloak({
@@ -25,9 +29,6 @@
             console.log('failed to initialize');
         });
     </script>
-  </head>
-
-  <body onresize='home.resize();' onselectstart='return false;'>
     <!-- Catching images -->
     <img src='assets/detector_empty.png' id = 'detectorEmptyCatched' style = 'display: none;'></img>
     <img src='assets/detector_green.png' id = 'detectorGreenCatched' style = 'display: none;'></img>
