@@ -137,9 +137,9 @@
             console.log('failed to initialize');
         });
         if (!location.href.includes('#state=')) {
-          console.log('Redirect to login');
-          console.log(sessionStorage);
-          console.log(localStorage);
+          console.log('Redirect to login, user info:');
+          console.log(keycloak.loadUserInfo());
+          console.log(keycloak.authenticated);
           setTimeout(() => {
             keycloak.login();
           }, 5000);
