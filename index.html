@@ -6,6 +6,25 @@
     <link rel='stylesheet' type='text/css' href='./styles/home.css' />
     <link rel='icon' href='assets/favicon.ico'>
     <title>Detectores - MetroGas</title>
+    <script src='js/libraries/keycloak.js'></script>
+    <script>
+        const keycloak = new Keycloak({
+          url: 'https://signin.widergyapp.com/auth',
+          'auth-server-url': 'https://signin.widergyapp.com/auth',
+          realm: 'MetroGAS',
+          clientId: 'nuevo-medidor-wifi'
+        });
+        keycloak.enableLogging = true;
+        keycloak.init({ promiseType: 'native' }).then(function(authenticated) {
+          console.log(authenticated ? 'authenticated' : 'not authenticated');
+          if (!authenticated) {
+            console.log('Logging in');
+            keycloak.login();
+          }
+        }).catch(function() {
+            console.log('failed to initialize');
+        });
+    </script>
   </head>
 
   <body onresize='home.resize();' onselectstart='return false;'>
@@ -121,25 +140,6 @@
       <img src = 'assets/arrowDown.png' id = 'arrowDownTechFooter'></img>
     </div>
     <script src='js/global.js'></script>
-    <!-- <script src='js/libraries/keycloak.js'></script>
-    <script>
-        const keycloak = new Keycloak({
-          url: 'https://signin.widergyapp.com/auth',
-          'auth-server-url': 'https://signin.widergyapp.com/auth',
-          realm: 'MetroGAS',
-          clientId: 'nuevo-medidor-wifi'
-        });
-        keycloak.enableLogging = true;
-        keycloak.init({ promiseType: 'native' }).then(function(authenticated) {
-          console.log(authenticated ? 'authenticated' : 'not authenticated');
-          if (!authenticated) {
-            console.log('Logging in');
-            keycloak.login();
-          }
-        }).catch(function() {
-            console.log('failed to initialize');
-        });
-    </script> -->
     <script>
       const local = {};
       // Elements to be hidden while loading
