@@ -18,7 +18,6 @@
           realm: 'MetroGAS',
           clientId: 'nuevo-medidor-wifi'
         });
-        keycloak.enableLogging = true;
         keycloak.init({ promiseType: 'native' }).then(function(authenticated) {
           console.log(authenticated ? 'authenticated' : 'not authenticated');
           if (!authenticated) {
