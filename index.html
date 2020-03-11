@@ -101,8 +101,6 @@
       <hr id = 'line1'></hr>
       <hr id = 'line2'></hr>
       <img id = 'tech1' />
-      <!-- <img id = 'tech2' />
-      <img id = 'tech3' /> -->
       <div class = 'title techTitle' id = 'techTitle3'>Contenido<br>de la caja</div>
       <div id = 'techBoxDescription'>
         <ul class = 'techList'>
@@ -142,53 +140,6 @@
             console.log('failed to initialize');
         });
     </script>
-    <!-- <script type="text/javascript">
-      const keycloak = Keycloak({
-          "realm": "UtilityGO! Backoffice Stage",
-          "auth-server-url": "https://signin.widergyapp.com/auth",
-          "ssl-required": "external",
-          "resource": "UtilityGO! Backoffice Stage/keep it default",
-          "public-client": true,
-          "confidential-port": 0,
-          "url": 'https://signin.widergyapp.com/auth',
-          "clientId": 'widergy-backoffice-web-stage',
-          "enable-cors": true
-      });
-      const loadData = () => {
-          console.log(keycloak.subject);
-          if (keycloak.idToken) {
-              // document.location.href = "?user="+keycloak.idTokenParsed.preferred_username;
-              console.log('IDToken');
-              console.log(keycloak.idTokenParsed.preferred_username);
-              console.log(keycloak.idTokenParsed.email);
-              console.log(keycloak.idTokenParsed.name);
-              console.log(keycloak.idTokenParsed.given_name);
-              console.log(keycloak.idTokenParsed.family_name);
-          } else {
-              keycloak.loadUserProfile(function() {
-                  console.log('Account Service');
-                  console.log(keycloak.profile.username);
-                  console.log(keycloak.profile.email);
-                  console.log(keycloak.profile.firstName + ' ' + keycloak.profile.lastName);
-                  console.log(keycloak.profile.firstName);
-                  console.log(keycloak.profile.lastName);
-              }, function() {
-                  console.log('Failed to retrieve user details. Please enable claims or account role');
-              });
-          }
-      };
-      const loadFailure =  () => {
-           console.log('Failed to load data.  Check console log');
-      };
-      const reloadData = () => {
-          keycloak.updateToken(10)
-                  .success(loadData)
-                  .error(() => {
-                      console.log('Failed to load data.  User is logged out.');
-                  });
-      }
-      keycloak.init({ onLoad: 'login-required' }).success(reloadData);
-    </script> -->
     <script>
       const local = {};
       // Elements to be hidden while loading
