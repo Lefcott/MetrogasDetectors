@@ -138,7 +138,11 @@
         });
         if (!location.href.includes('#state=')) {
           console.log('Redirect to login');
-          keycloak.login()
+          console.log(sessionStorage);
+          console.log(localStorage);
+          setTimeout(() => {
+            keycloak.login();
+          }, 5000);
         }
     </script>
     <!-- <script type="text/javascript">
