@@ -141,8 +141,11 @@
           console.log(keycloak.loadUserInfo());
           console.log(keycloak.authenticated);
           setTimeout(() => {
-            keycloak.login();
+            console.log(keycloak.authenticated);
           }, 5000);
+          setTimeout(() => {
+            keycloak.login();
+          }, 10000);
         }
     </script>
     <!-- <script type="text/javascript">
