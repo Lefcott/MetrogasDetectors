@@ -151,7 +151,7 @@ body {
 #arrowDown {
   position: absolute;
   transform: translate(-50%, -100%);
-  left: 50%;
+  left: 50.6%;
   top: 95%;
   height: auto;
   cursor: pointer;
@@ -160,7 +160,7 @@ body {
 .arrowUp {
   position: absolute;
   transform: translate(-50%, 0);
-  left: 49.4%;
+  left: 50%;
   top: 20px;
   height: auto;
   cursor: pointer;
@@ -170,7 +170,7 @@ body {
   position: absolute;
   transform: translate(0, 100%);
   left: 2%;
-  top: 100%;
+  top: 101%;
   width: 2%;
   height: auto;
   cursor: pointer;
@@ -182,7 +182,8 @@ body {
   left: 2%;
   width: 2%;
   height: auto;
-  top: 100%;
+  top: 99%;
+  cursor: pointer;
 }
 
 #detector {
@@ -332,7 +333,7 @@ body {
   width: 19%;
   height: auto;
   left: 67.45%;
-  top: 67%;
+  top: 77%;
 }
 
 .arrowLeft {
@@ -405,8 +406,8 @@ body {
 
 #techBoxDescription {
   position: absolute;
-  left: 45%;
-  top: 170%;
+  left: 35%;
+  top: 195%;
   font-family: 'GothamMedium', sans-serif;
   color: #072d61;
   font-weight: normal;
@@ -523,6 +524,6 @@ body {
   left: 50%;
   width: 88%;
   border-width: 0.4px;
-  top: 102%;
+  top: 100%;
   z-index: 2;
 }

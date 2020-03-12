@@ -58,7 +58,7 @@
       <div class='subtitle'>NUEVO DETECTOR WI-FI<br>
         <div class='subtitle subsubtitle'>DE GAS NATURAL Y MON&Oacute;XIDO DE CARBONO</div>
       </div>
-      <img src='assets/arrowDown.png' id='arrowDown' onclick='actions.scrollY(1, 28);' class = 'removeOnHome'></img>
+      <img src='assets/arrowDown.png' id='arrowDown' onclick='actions.scrollY(null, 1, 28);' class = 'removeOnHome'></img>
       <img id='detector' class = 'removeOnHome'></img>
       <div id='plus' class = 'removeOnHome'>+</div>
       <img src='assets/mobile_home.png' id='mobile' class = 'removeOnHome'></img>
@@ -73,7 +73,7 @@
         <image id = 'bigImage2Down' width='100' height='100' preserveAspectRatio="none" />
       </svg>
       <div id='svgOverlay'></div>
-      <img src='assets/arrowUp.png' class='arrowUp' onclick='actions.scrollY(-1, 28);'></img>
+      <img src='assets/arrowUp.png' class='arrowUp' onclick='actions.scrollY(null, -1, 28);'></img>
       <div class='button' id='button1' onclick='actions.scrollX("soundContainer", "downContainer");'>Prob&aacute; el detector<br>en funcionamiento<br><br><img src = 'assets/arrowRight.png' id = 'arrowRight1' class = 'arrowH' /></div>
       <div class='button' id='button2' onclick='actions.scrollX("techContainer", "downContainer");'>Especificaciones<br>t&eacute;cnicas<br><img id = 'arrowRight2' src = 'assets/arrowRight.png' class = 'arrowH' /></div>
     </div>
@@ -138,8 +138,8 @@
         </ul>
       </div>
       <img id = 'techBig' />
-      <img src = 'assets/arrowUp2.png' id = 'arrowUpTechFooter'></img>
-      <img src = 'assets/arrowDown.png' id = 'arrowDownTechFooter'></img>
+      <img src = 'assets/arrowUp2.png' id = 'arrowUpTechFooter' onclick='actions.scrollY("techContainer", -1, 28);'></img>
+      <img src = 'assets/arrowDown.png' id = 'arrowDownTechFooter' onclick='actions.scrollY("techContainer", 1, 28);'></img>
     </div>
     <script src='js/global.js'></script>
     <script>

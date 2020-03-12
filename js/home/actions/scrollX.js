@@ -3,7 +3,7 @@ actions.scrollX = (openId, closeId) => {
   const closeTarget = element.id(closeId);
 
   if (closeId === 'downContainer') {
-    actions.scrollY(1, 28);
+    actions.scrollY(null, 1, 28);
     document.body.style.overflowY = 'hidden';
     closeTarget.style.left = '-110%';
   } else {
