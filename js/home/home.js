@@ -15,7 +15,15 @@ home.elements = {
   downContainer: element.id('downContainer'),
   soundContainer: element.id('soundContainer'),
   detectorRunningTitle: element.id('detectorRunningTitle'),
+  buttonDetectorContainer: element.id('buttonDetectorContainer'),
+  detectorButtons: element.class('detectorButton'),
+  detectorButtonLeft: element.id('detectorButtonLeft'),
+  detectorButtonRight: element.id('detectorButtonRight'),
+  volume: element.id('volume'),
+  detectorEmpty: element.id('detectorEmpty'),
+  mobileHome: element.id('mobileHome'),
   techContainer: element.id('techContainer'),
+  techTitle1: element.id('techTitle1'),
   techDescription: element.id('techDescription'),
   techBoxDescription: element.id('techBoxDescription'),
   techTitles: element.class('techTitle'),
@@ -29,7 +37,6 @@ home.constants = {
 };
 
 home.resize = () => {
-  actions.detector.load();
   const tabletRelation = [0.6188, 1];
   const { imgHeightCoef } = home.constants;
   const imgWidth = innerWidth / 2;
@@ -81,5 +88,6 @@ home.resize = () => {
     tablet.resize();
   }
 };
+
 
 home.changeScreen = newScreen => {};

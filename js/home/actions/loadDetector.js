@@ -1,22 +1,21 @@
 actions.detector = {};
 
-actions.detector.buttons = element.class('detectorButton');
-actions.detector.buttonContainer = element.id('buttonDetectorContainer');
+actions.detector.load = (style, heightCoef) => {
+  const { detectorButtons, buttonDetectorContainer } = home.elements;
 
-actions.detector.load = () => {
-  const { buttons, buttonContainer } = actions.detector;
-  const heightCoef = 0.1;
-
-  buttonContainer.style.width = '33.5%';
+  const styleKeys = Object.keys(style);
+  for (let k = 0; k < styleKeys.length; k += 1) {
+    buttonDetectorContainer.style[styleKeys[k]] = style[styleKeys[k]];
+  }
   setTimeout(() => {
-    const containerWidth = buttonContainer.offsetWidth;
-    const buttonWidth = containerWidth / buttons.length;
+    const containerWidth = buttonDetectorContainer.offsetWidth;
+    const buttonWidth = containerWidth / detectorButtons.length;
 
-    buttonContainer.style.height = `${containerWidth * heightCoef}px`;
-    
-    for (let k = 0; k < buttons.length; k += 1) {
-      buttons[k].style.left = `${buttonWidth * k}px`;
-      buttons[k].style.width = `${buttonWidth}px`;
+    buttonDetectorContainer.style.height = `${containerWidth * heightCoef}px`;
+
+    for (let k = 0; k < detectorButtons.length; k += 1) {
+      detectorButtons[k].style.left = `${buttonWidth * k}px`;
+      detectorButtons[k].style.width = `${buttonWidth}px`;
     }
   }, 2);
 };

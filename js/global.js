@@ -25,8 +25,8 @@ global.loadScripts = (arrScripts, start) => {
   document.body.appendChild(scriptElement);
 };
 
-global.private.changeStyle = elem => (style = {}) => {
-  if (Object.keys(elem.prevStyle).length === 0) {
+global.private.changeStyle = (save, elem) => (style = {}) => {
+  if (save && Object.keys(elem.prevStyle).length === 0) {
     Object.keys(elem.style).forEach(styleElem => {
       elem.prevStyle[styleElem] = elem.style[styleElem];
     });
@@ -64,7 +64,8 @@ const element = {
       throw new Error(`Element with id "${id}" not found.`);
     }
     elem.prevStyle = elem.prevStyle || {};
-    elem.changeStyle = elem.changeStyle || global.private.changeStyle(elem);
+    elem.changeStyle = elem.changeStyle || global.private.changeStyle(false, elem);
+    elem.changeStyleSave = elem.changeStyleSave || global.private.changeStyle(true, elem);
     elem.undoStyle = elem.undoStyle || global.private.undoStyle(elem);
     elem.addClass = elem.addClass || (Class => elem.classList.add(Class));
     elem.removeClass = elem.removeClass || (Class => elem.classList.remove(Class));
