@@ -25,6 +25,10 @@ global.loadScripts = (arrScripts, start) => {
   document.body.appendChild(scriptElement);
 };
 
+global.private.changeAttributes = elem => (attributes = {}) => {
+  Object.keys(attributes).forEach(attribute => elem.setAttribute(attribute, attributes[attribute]));
+};
+
 global.private.changeStyle = (save, elem) => (style = {}) => {
   if (save && Object.keys(elem.prevStyle).length === 0) {
     Object.keys(elem.style).forEach(styleElem => {
@@ -64,6 +68,7 @@ const element = {
       throw new Error(`Element with id "${id}" not found.`);
     }
     elem.prevStyle = elem.prevStyle || {};
+    elem.changeAttributes = elem.changeStyle || global.private.changeAttributes(elem);
     elem.changeStyle = elem.changeStyle || global.private.changeStyle(false, elem);
     elem.changeStyleSave = elem.changeStyleSave || global.private.changeStyle(true, elem);
     elem.undoStyle = elem.undoStyle || global.private.undoStyle(elem);
