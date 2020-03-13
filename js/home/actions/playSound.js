@@ -4,7 +4,7 @@ actions.sound.canEnable = false;
 actions.sound.currId = null;
 actions.sound.currButton = element.id('detectorButtonLeft');
 actions.sound.currButtonText = element.id('detectorButtonText1');
-
+// TODO Fix parameters on index.html
 actions.sound.play = (id, buttonId, buttonTextId, detectorSrc, mobileSrc) => {
   if (id) {
     actions.sound.canEnable = true;

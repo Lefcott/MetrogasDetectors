@@ -1,4 +1,4 @@
-const mobile = {};
+window.mobile = {};
 
 mobile.resize = () => {
   actions.detector.load({ width: '96.5%', top: '10%' }, 0.1);
@@ -15,9 +15,14 @@ mobile.resize = () => {
       mobileHome: { width: '40%', left: '50%', top: '50%', transform: 'translate(-50%, 0)' },
       pageTitle: { fontSize: '4vw' },
       techTitle1: { top: '2%' },
-      techTitle3: { top: '88%' },
-      techDescription: { fontSize: '4vw', top: '20%', lineHeight: '60px' },
-      techBoxDescription: { fontSize: '4vw', lineHeight: '60px' }
+      techTitle2: { top: '94.5%' },
+      tech1: { top: '98%' },
+      techTitle3: { top: '118%' },
+      techBig: { top: '130%', width: '100%', left: '0' },
+      techDescription: { fontSize: '4vw', top: '10%', left: '5%', lineHeight: '100px' },
+      techBoxDescription: { fontSize: '4vw', lineHeight: '60px' },
+      line1: { top: '88.5%' },
+      line2: { top: '112%' }
     },
     byClass: {
       arrowUp: { width: '8%' },

@@ -1,10 +1,12 @@
-const imageMapping = {
+const imageMapping = {};
+
+imageMapping.web = {
   v1: {
     bigImage2Hidden: { file: 'assets/bigImage2_Web.png', load: true },
     bigImage2Up: { file: 'assets/bigImage2_Web.png', load: true },
     bigImage2Down: { file: 'assets/bigImage2_Web.png', load: true },
     detector: { file: 'assets/detector.png', load: true },
-    tech1: { file: 'assets/tech.png', load: true },
+    tech1: { file: 'assets/tech_Web.png', load: true },
     techBig: { file: 'assets/techBig.png', load: true },
     detectorEmpty: { file: 'assets/detector_empty.png', load: true },
     detectorEmptyCatched: { file: 'assets/detector_empty.png', load: true },
@@ -17,7 +19,7 @@ const imageMapping = {
     bigImage2Up: { file: 'assets/bigImage2_Web_P2.png', load: true },
     bigImage2Down: { file: 'assets/bigImage2_Web_P2.png', load: true },
     detector: { file: 'assets/detector_P2.png', load: true },
-    tech1: { file: 'assets/tech_P2.png', load: true },
+    tech1: { file: 'assets/tech_Web_P2.png', load: true },
     techBig: { file: 'assets/techBig_P2.png', load: true },
     detectorEmpty: { file: 'assets/detector_empty_P2.png', load: true },
     detectorEmptyCatched: { file: 'assets/detector_empty_P2.png', load: true },
@@ -27,30 +29,43 @@ const imageMapping = {
   }
 };
 
+imageMapping.mobile = {
+  v1: {
+    ...imageMapping.web.v1,
+    tech1: { file: 'assets/tech_Mobile.png', load: true }
+  },
+  v2: {
+    ...imageMapping.web.v2,
+    tech1: { file: 'assets/tech_Mobile_P2.png', load: true }
+  }
+};
+
 (() => {
   // --------------------------------------
   // --------------------------------------
   //           DEFINE PAGE HERE
   // --------------------------------------
   // --------------------------------------
+  const device = actions.getDevice();
+
   const currentPage = global.query.page || 'v2';
   // Key: page, Value: object: { Key: img id, value: img src }
-  if (!imageMapping[currentPage]) {
-    console.error(
-      `currentPage '${currentPage}' does not exist.\nValid values:\n${Object.keys(imageMapping)}`
-    );
+  if (!imageMapping[device.name] || !imageMapping[device.name][currentPage]) {
+    console.error(`currentPage '${currentPage}' does not have '${device.name}' version.`);
     return;
   }
-  const keys = Object.keys(imageMapping[currentPage]);
+  const keys = Object.keys(imageMapping[device.name][currentPage]);
   for (let k = 0; k < keys.length; k += 1) {
-    if (imageMapping[currentPage][keys[k]].load) {
+    if (imageMapping[device.name][currentPage][keys[k]].load) {
       const elem = document.getElementById(keys[k]);
       if (!elem) {
-        console.error(`Element with id "${keys[k]}" was not found on imageMapping["${currentPage}"]`);
+        console.error(
+          `Element with id "${keys[k]}" was not found on imageMapping["${device.name}"]["${currentPage}"]`
+        );
         continue;
       }
-      elem.setAttribute('src', imageMapping[currentPage][keys[k]].file);
-      elem.setAttribute('href', imageMapping[currentPage][keys[k]].file);
+      elem.setAttribute('src', imageMapping[device.name][currentPage][keys[k]].file);
+      elem.setAttribute('href', imageMapping[device.name][currentPage][keys[k]].file);
     }
   }
 })();
@@ -68,8 +83,12 @@ if (!global.query.page) {
   // IF THE PAGE IS NOT HOME (V1 OR V2)
   document.getElementById('homeDetector1').parentNode.removeChild(document.getElementById('homeDetector1'));
   document.getElementById('homeDetector2').parentNode.removeChild(document.getElementById('homeDetector2'));
-  document.getElementById('homeDetectorTitle1').parentNode.removeChild(document.getElementById('homeDetectorTitle1'));
-  document.getElementById('homeDetectorTitle2').parentNode.removeChild(document.getElementById('homeDetectorTitle2'));
+  document
+    .getElementById('homeDetectorTitle1')
+    .parentNode.removeChild(document.getElementById('homeDetectorTitle1'));
+  document
+    .getElementById('homeDetectorTitle2')
+    .parentNode.removeChild(document.getElementById('homeDetectorTitle2'));
   document.getElementById('homeMobile').parentNode.removeChild(document.getElementById('homeMobile'));
   document.getElementById('homeMobile2').parentNode.removeChild(document.getElementById('homeMobile2'));
   document.getElementById('homeShadow').parentNode.removeChild(document.getElementById('homeShadow'));

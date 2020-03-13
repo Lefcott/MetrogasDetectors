@@ -60,7 +60,6 @@ global.private.undoStyle = elem => () => {
   });
   elem.prevStyle = {};
 };
-
 const element = {
   id: id => {
     const elem = document.getElementById(id);
@@ -99,6 +98,7 @@ global.query = (() => {
 
 (() => {
   const scripts = [
+    { file: 'js/home/actions/getDevice.js' },
     { file: 'js/home/actions/loadImages.js' },
     { file: 'js/home/actions/loadDetector.js' },
     { file: 'js/home/actions/playSound.js' },

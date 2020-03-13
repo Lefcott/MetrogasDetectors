@@ -357,7 +357,6 @@ body {
 
 #techDescription {
   position: absolute;
-  left: 33.33%;
   font-family: 'GothamMedium', sans-serif;
   color: #072d61;
   font-weight: normal;
@@ -370,13 +369,11 @@ body {
 
 #techTitle2 {
   left: 6%;
-  top: 68%;
 }
 
 #tech1 {
   position: absolute;
   left: 35%;
-  top: 68%;
   width: 55%;
   height: auto;
 }
@@ -401,10 +398,7 @@ body {
 
 #techBig {
   position: absolute;
-  left: 24%;
-  width: 78%;
   height: auto;
-  top: 100%;
 }
 
 #loader {
@@ -500,7 +494,6 @@ body {
   left: 50%;
   width: 88%;
   border-width: 0.8px;
-  top: 60%;
   z-index: 2;
 }
 
@@ -510,6 +503,5 @@ body {
   left: 50%;
   width: 88%;
   border-width: 0.4px;
-  top: 100%;
   z-index: 2;
 }

@@ -1,4 +1,4 @@
-const web = {};
+window.web = {};
 
 web.resize = () => {
   actions.detector.load({ width: '33.5%', top: '23%' }, 0.1);
@@ -19,9 +19,14 @@ web.resize = () => {
         transform: 'translate(-50%, -50%)'
       },
       techTitle1: { top: '4%' },
+      techTitle2: { top: '68%' },
+      tech1: { top: '68%' },
       techTitle3: { top: '110%' },
-      techDescription: { fontSize: '1.15vw', top: '2.3%', lineHeight: '33px' },
-      techBoxDescription: { fontSize: '1.15vw', lineHeight: '35px' }
+      techBig: { top: '100%', width: '78%', left: '24%' },
+      techDescription: { fontSize: '1.15vw', top: '2.3%', left: '33.33%', lineHeight: '33px' },
+      techBoxDescription: { fontSize: '1.15vw', lineHeight: '35px' },
+      line1: { top: '60%' },
+      line2: { top: '100%' }
     },
     byClass: {
       arrowUp: { width: '2%' },
