@@ -1,6 +1,8 @@
 const logo = document.getElementById('kc-logo-wrapper');
 const title = document.getElementById('kc-header-wrapper');
 const links = document.getElementsByTagName('a');
+const [user, pass] = document.getElementsByTagName('label');
+const [login] = document.getElementsByName('login');
 
 logo.style.backgroundImage =
   'url(https://nuevo-detector-wifi.s3.amazonaws.com/external_assets/Logometrogas.png)';
@@ -27,3 +29,8 @@ newStyle.appendChild(
 document.head.appendChild(newStyle);
 
 title.style.fontFamily = "'GothamRegular', sans-serif";
+
+user.innerHTML = 'Usuario o Email';
+pass.innerHTML = 'Contrase&ntilde;a';
+
+login.value = 'Ingresar';
