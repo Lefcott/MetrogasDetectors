@@ -377,6 +377,24 @@ body {
   width: 55%;
   height: auto;
 }
+#tech1_0 {
+  position: absolute;
+  left: 35%;
+  width: 175px;
+  height: auto;
+}
+#tech1_1 {
+  position: absolute;
+  left: 48%;
+  width: 330px;
+  height: auto;
+}
+#tech1_2 {
+  position: absolute;
+  left: 70%;
+  width: 350px;
+  height: auto;
+}
 
 #techTitle3 {
   left: 6%;

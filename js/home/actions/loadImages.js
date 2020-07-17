@@ -6,7 +6,7 @@ imageMapping.web = {
     bigImage2Up: { file: 'assets/bigImage2_Web.png', load: true },
     bigImage2Down: { file: 'assets/bigImage2_Web.png', load: true },
     detector: { file: 'assets/detector.png', load: true },
-    tech1: { file: 'assets/tech_Web.png', load: true },
+    // tech1: { file: 'assets/tech_Web.png', load: true },
     techBig: { file: 'assets/techBig.png', load: true },
     detectorEmpty: { file: 'assets/detector_empty.png', load: true },
     detectorEmptyCatched: { file: 'assets/detector_empty.png', load: true },
@@ -19,7 +19,10 @@ imageMapping.web = {
     bigImage2Up: { file: 'assets/bigImage2_Web_P2.png', load: true },
     bigImage2Down: { file: 'assets/bigImage2_Web_P2.png', load: true },
     detector: { file: 'assets/detector_P2.png', load: true },
-    tech1: { file: 'assets/tech_Web_P2.png', load: true },
+    // tech1: { file: 'assets/tech_Web_P2.png', load: true },
+    tech1_0: { file: 'assets/Apagado.png', load: true },
+    tech1_1: { file: 'assets/ApagadoLateral.png', load: true },
+    tech1_2: { file: 'assets/ApagadoAtras.png', load: true },
     techBig: { file: 'assets/techBig_P2.png', load: true },
     detectorEmpty: { file: 'assets/detector_empty_P2.png', load: true },
     detectorEmptyCatched: { file: 'assets/detector_empty_P2.png', load: true },
@@ -55,6 +58,7 @@ imageMapping.mobile = {
     return;
   }
   const keys = Object.keys(imageMapping[device.name][currentPage]);
+  console.log(device.name, currentPage);
   for (let k = 0; k < keys.length; k += 1) {
     if (imageMapping[device.name][currentPage][keys[k]].load) {
       const elem = document.getElementById(keys[k]);

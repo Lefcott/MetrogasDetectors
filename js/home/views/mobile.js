@@ -16,7 +16,7 @@ mobile.resize = () => {
       pageTitle: { fontSize: '4vw' },
       techTitle1: { top: '2%' },
       techTitle2: { top: '94.5%' },
-      tech1: { top: '98%' },
+      // tech1: { top: '98%' },
       techTitle3: { top: '118%' },
       techBig: { top: '130%', width: '100%', left: '0' },
       techDescription: { fontSize: '4vw', top: '10%', left: '5%', lineHeight: '100px' },
