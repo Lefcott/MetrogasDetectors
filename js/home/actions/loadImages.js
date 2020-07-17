@@ -35,11 +35,11 @@ imageMapping.web = {
 imageMapping.mobile = {
   v1: {
     ...imageMapping.web.v1,
-    tech1: { file: 'assets/tech_Mobile.png', load: true }
+    // tech1: { file: 'assets/tech_Mobile.png', load: true }
   },
   v2: {
     ...imageMapping.web.v2,
-    tech1: { file: 'assets/tech_Mobile_P2.png', load: true }
+    // tech1: { file: 'assets/tech_Mobile_P2.png', load: true }
   }
 };
 

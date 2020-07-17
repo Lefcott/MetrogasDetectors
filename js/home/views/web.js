@@ -1,6 +1,13 @@
 window.web = {};
 
 web.resize = () => {
+  const { imgHeightCoef } = home.constants;
+  const imgWidth = innerWidth / 2;
+  const imgHeight = innerHeight * imgHeightCoef;
+  const maxSize = Math.max(imgWidth, imgHeight);
+  const viewedWidth = (imgWidth / maxSize) * 100;
+  const viewedHeight = (imgHeight / maxSize) * 100;
+
   actions.detector.load({ width: '33.5%', top: '23%' }, 0.1);
   home.setStyles({
     byId: {
@@ -29,7 +36,36 @@ web.resize = () => {
       techDescription: { fontSize: '1.15vw', top: '2.3%', left: '33.33%', lineHeight: '33px' },
       techBoxDescription: { fontSize: '1.15vw', lineHeight: '35px' },
       line1: { top: '60%' },
-      line2: { top: '100%' }
+      line2: { top: '100%' },
+
+      // Big Images
+      downContainer: { width: `${innerWidth}px`, top: `${innerHeight}px`, height: `${innerHeight}px` },
+      bigImage1: {
+        viewBox: `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`,
+        left: '0',
+        top: '0',
+        width: imgWidth,
+        height: imgHeight
+      },
+      bigImage2: {
+        viewBox: `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`,
+        left: `${imgWidth}px`,
+        top: '0',
+        width: imgWidth,
+        height: imgHeight
+      },
+      bigImage3: {
+        left: '0',
+        top: '0',
+        width: imgWidth,
+        height: imgHeight
+      },
+      bigImage4: {
+        left: `${imgWidth}px`,
+        top: '0',
+        width: imgWidth,
+        height: imgHeight
+      }
     },
     byClass: {
       arrowUp: { width: '2%' },

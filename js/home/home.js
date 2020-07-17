@@ -47,37 +47,11 @@ home.constants = {
 home.resize = () => {
   const device = actions.getDevice();
   const { imgHeightCoef } = home.constants;
-  const imgWidth = innerWidth / 2;
   const imgHeight = innerHeight * imgHeightCoef;
-  const maxSize = Math.max(imgWidth, imgHeight);
-  const viewedWidth = (imgWidth / maxSize) * 100;
-  const viewedHeight = (imgHeight / maxSize) * 100;
-
-  home.setAttributes({
-    byId: {
-      bigImage1: {
-        viewBox: `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`,
-        height: imgHeight
-      },
-      bigImage2: {
-        viewBox: `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`,
-        height: imgHeight
-      },
-      bigImage3: {
-        viewBox: `${(100 - viewedWidth) / 2} 0 ${viewedWidth} 100`,
-        height: innerHeight
-      },
-      bigImage4: {
-        viewBox: `${(100 - viewedWidth) / 4} 0 ${viewedWidth} 100`,
-        height: innerHeight
-      }
-    }
-  });
 
   home.setStyles({
     byId: {
       footer: { top: `${imgHeight}px`, height: `${(1 - imgHeightCoef) * visualViewport.height}px` },
-      downContainer: { width: `${innerWidth}px`, top: `${innerHeight}px` },
       soundContainer: { width: `${innerWidth}px`, height: `${innerHeight}px`, top: `${innerHeight}px` },
       techContainer: { width: `${innerWidth}px`, height: `${innerHeight}px`, top: `${innerHeight}px` }
     }
