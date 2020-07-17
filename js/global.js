@@ -65,9 +65,7 @@ const element = {
     const elem = document.getElementById(id);
     if (!elem) {
       console.error(`Element with id "${id}" not found.`);
-      const created = document.createElement('div');
-      created.id = id;
-      return element.id(id);
+      return null;
     }
     elem.prevStyle = elem.prevStyle || {};
     elem.changeAttributes = elem.changeStyle || global.private.changeAttributes(elem);
