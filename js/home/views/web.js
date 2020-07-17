@@ -11,7 +11,7 @@ web.resize = () => {
       detectorButtonLeft: { borderRadius: '17px 0px 0px 17px' },
       detectorButtonRight: { borderRadius: '0px 17px 17px 0px' },
       volume: { width: '6.2%', top: '36%' },
-      detectorEmpty: { width: '40%', left: '30%', top: '68%' },
+      detectorEmpty: { width: '28%', left: '30%', top: '68%' },
       mobileHome: {
         width: '19%',
         left: '67.45%',

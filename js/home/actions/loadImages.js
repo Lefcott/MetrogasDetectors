@@ -18,17 +18,17 @@ imageMapping.web = {
     bigImage2Hidden: { file: 'assets/bigImage2_Web_P2.png', load: true },
     bigImage2Up: { file: 'assets/bigImage2_Web_P2.png', load: true },
     bigImage2Down: { file: 'assets/bigImage2_Web_P2.png', load: true },
-    detector: { file: 'assets/detector_P2.png', load: true },
+    detector: { file: 'assets/Prendido_P2.png', load: true },
     // tech1: { file: 'assets/tech_Web_P2.png', load: true },
-    tech1_0: { file: 'assets/Apagado.png', load: true },
-    tech1_1: { file: 'assets/ApagadoLateral.png', load: true },
-    tech1_2: { file: 'assets/ApagadoAtras.png', load: true },
+    tech1_0: { file: 'assets/Apagado_P2.png', load: true },
+    tech1_1: { file: 'assets/ApagadoLateral_P2.png', load: true },
+    tech1_2: { file: 'assets/ApagadoAtras_P2.png', load: true },
     techBig: { file: 'assets/techBig_P2.png', load: true },
-    detectorEmpty: { file: 'assets/detector_empty_P2.png', load: true },
-    detectorEmptyCatched: { file: 'assets/detector_empty_P2.png', load: true },
-    detectorGreenCatched: { file: 'assets/detector_green_P2.png', load: true },
-    detectorYellowCatched: { file: 'assets/detector_yellow_P2.png', load: true },
-    detectorRedCatched: { file: 'assets/detector_red_P2.png', load: true }
+    detectorEmpty: { file: 'assets/Apagado_P2.png', load: true },
+    detectorEmptyCatched: { file: 'assets/Apagado_P2.png', load: true },
+    detectorGreenCatched: { file: 'assets/Prendido_P2.png', load: true },
+    detectorYellowCatched: { file: 'assets/GN_P2.jpg', load: true },
+    detectorRedCatched: { file: 'assets/CO_P2.jpg', load: true }
   }
 };
 

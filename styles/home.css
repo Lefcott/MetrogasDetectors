@@ -188,10 +188,10 @@ body {
 
 #detector {
   position: absolute;
-  width: 23%;
+  width: 16%;
   height: auto;
   transform: translate(0, -50%);
-  left: 55%;
+  left: 56.5%;
   top: 10%;
 }
 
@@ -379,19 +379,19 @@ body {
 }
 #tech1_0 {
   position: absolute;
-  left: 35%;
+  left: 31%;
   width: 175px;
   height: auto;
 }
 #tech1_1 {
   position: absolute;
-  left: 48%;
+  left: 44%;
   width: 330px;
   height: auto;
 }
 #tech1_2 {
   position: absolute;
-  left: 70%;
+  left: 66%;
   width: 350px;
   height: auto;
 }
@@ -469,10 +469,10 @@ body {
 #homeDetector1 {
   position: absolute;
   transform: translate(-50%, -50%);
-  left: 25%;
+  left: 28%;
   top: 30%;
   z-index: 3;
-  width: 50%;
+  width: 20%;
   cursor: pointer;
 }
 
