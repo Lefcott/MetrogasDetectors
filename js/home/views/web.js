@@ -41,14 +41,12 @@ web.resize = () => {
       // Big Images
       downContainer: { width: `${innerWidth}px`, top: `${innerHeight}px`, height: `${innerHeight}px` },
       bigImage1: {
-        viewBox: `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`,
         left: '0',
         top: '0',
         width: imgWidth,
         height: imgHeight
       },
       bigImage2: {
-        viewBox: `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`,
         left: `${imgWidth}px`,
         top: '0',
         width: imgWidth,
@@ -75,4 +73,8 @@ web.resize = () => {
       techTitle: { fontSize: '2.3vw' }
     }
   });
+  bigImage1.setAttribute('viewBox', `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`);
+  bigImage2.setAttribute('viewBox', `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`);
+  bigImage3.setAttribute('viewBox', `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`);
+  bigImage4.setAttribute('viewBox', `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`);
 };

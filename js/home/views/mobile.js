@@ -37,28 +37,24 @@ mobile.resize = () => {
       // Big Images
       downContainer: { width: `${innerWidth}px`, top: `${innerHeight}px`, height: `${innerHeight}px` },
       bigImage1: {
-        viewBox: `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`,
         left: '0',
         top: '0',
-        width: '100%',
+        width: imgWidth,
         height: imgHeight
       },
       bigImage2: {
-        viewBox: `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`,
         left: '0',
         top: `${imgHeight}px`,
         width: '100%',
         height: imgHeight
       },
       bigImage3: {
-        viewBox: `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`,
         left: '0',
         top: '0',
         width: '100%',
         height: imgHeight
       },
       bigImage4: {
-        viewBox: `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`,
         left: '0',
         top: `${imgHeight}px`,
         width: '100%',
@@ -73,4 +69,7 @@ mobile.resize = () => {
       techTitle: { fontSize: '6vw' }
     }
   });
+  bigImage1.setAttribute('viewBox', `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`);
+  // bigImage1.setAttribute('viewBox', `0 0 ${viewedWidth} ${viewedHeight}`);
+  bigImage2.setAttribute('viewBox', `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 4} ${viewedWidth} ${viewedHeight}`);
 };

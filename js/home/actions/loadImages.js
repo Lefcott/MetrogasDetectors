@@ -15,9 +15,9 @@ imageMapping.web = {
     detectorRedCatched: { file: 'assets/detector_red.png', load: true }
   },
   v2: {
-    bigImage2Hidden: { file: 'assets/bigImage2_Web_P2.png', load: true },
-    bigImage2Up: { file: 'assets/bigImage2_Web_P2.png', load: true },
-    bigImage2Down: { file: 'assets/bigImage2_Web_P2.png', load: true },
+    bigImage2Hidden: { file: 'assets/bigImage2_Web_P2.jpg', load: true },
+    bigImage2Up: { file: 'assets/bigImage2_Web_P2.jpg', load: true },
+    bigImage2Down: { file: 'assets/bigImage2_Web_P2.jpg', load: true },
     detector: { file: 'assets/Prendido_P2.png', load: true },
     tech1: { file: 'assets/tech_Web_P2.jpg', load: true },
     // tech1_0: { file: 'assets/Apagado_P2.png', load: true },
