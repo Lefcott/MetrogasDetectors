@@ -70,6 +70,7 @@ mobile.resize = () => {
     }
   });
   bigImage1.setAttribute('viewBox', `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`);
-  // bigImage1.setAttribute('viewBox', `0 0 ${viewedWidth} ${viewedHeight}`);
   bigImage2.setAttribute('viewBox', `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 4} ${viewedWidth} ${viewedHeight}`);
+  bigImage3.setAttribute('viewBox', `${(100 - viewedWidth) / 2} ${(100 - viewedHeight) / 2} ${viewedWidth} ${viewedHeight}`);
+  bigImage4.setAttribute('viewBox', `${(100 - viewedWidth) / 4} ${(100 - viewedHeight) / 4} ${viewedWidth} ${viewedHeight}`);
 };
