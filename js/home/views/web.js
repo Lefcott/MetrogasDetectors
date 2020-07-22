@@ -39,7 +39,7 @@ web.resize = () => {
       line2: { top: '100%' },
 
       // Big Images
-      downContainer: { width: `${innerWidth}px`, top: `${innerHeight}px`, height: `${innerHeight}px` },
+      downContainer: { width: `${innerWidth}px`, top: `${innerHeight}px`, height: `${imgHeight}px` },
       bigImage1: {
         left: '0',
         top: '0',
@@ -63,6 +63,14 @@ web.resize = () => {
         top: '0',
         width: imgWidth,
         height: imgHeight
+      },
+      button1: {
+        top: '48%',
+        left: '25%'
+      },
+      button2: {
+        top: '48%',
+        left: '75%'
       }
     },
     byClass: {

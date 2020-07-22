@@ -72,20 +72,11 @@ body {
 .button {
   position: absolute;
   transform: translate(-50%, 0);
-  top: 48%;
   font-family: 'GothamMedium', sans-serif;
   font-weight: normal;
   text-align: center;
   color: #fff;
   cursor: pointer;
-}
-
-#button1 {
-  left: 25%;
-}
-
-#button2 {
-  left: 75%;
 }
 
 .title {
@@ -201,7 +192,7 @@ body {
   top: 3%;
   font-family: 'GothamBook', sans-serif;
   font-size: 4.2vw;
-  color: #072D61;
+  color: #072d61;
 }
 
 #mobile {
@@ -435,8 +426,12 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(720deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
 }
 
 #shadow {

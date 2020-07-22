@@ -59,6 +59,14 @@ mobile.resize = () => {
         top: `${imgHeight}px`,
         width: '100%',
         height: imgHeight
+      },
+      button1: {
+        top: '22%',
+        left: '50%'
+      },
+      button2: {
+        top: '60%',
+        left: '50%'
       }
     },
     byClass: {
