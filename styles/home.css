@@ -71,8 +71,8 @@ body {
 
 .button {
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 60%;
+  transform: translate(-50%, 0);
+  top: 48%;
   font-family: 'GothamMedium', sans-serif;
   font-weight: normal;
   text-align: center;
@@ -85,7 +85,6 @@ body {
 }
 
 #button2 {
-  top: 59%;
   left: 75%;
 }
 
