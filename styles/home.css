@@ -40,6 +40,35 @@ body {
   top: 4%;
 }
 
+#home {
+  position: absolute;
+  right: 2.6%;
+  top: 4%;
+  height: auto;
+  width: 2%;
+  cursor: pointer;
+}
+
+#home2 {
+  position: absolute;
+  right: 2.6%;
+  top: 4%;
+  height: auto;
+  width: 2%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+#home3 {
+  position: absolute;
+  right: 2.6%;
+  top: 7.5%;
+  height: auto;
+  width: 2%;
+  cursor: pointer;
+  z-index: 3;
+}
+
 #downContainer {
   /* Sync this with script on html */
   visibility: hidden;
@@ -185,6 +214,15 @@ body {
   top: 10%;
 }
 
+#detector2 {
+  position: absolute;
+  width: 16%;
+  height: auto;
+  transform: translate(0, -50%);
+  left: 56.5%;
+  top: 10%;
+}
+
 #plus {
   position: absolute;
   height: auto;
@@ -318,7 +356,8 @@ body {
   position: absolute;
   transform: translate(-100%, 0);
   height: auto;
-  left: 95%;
+  left: 2%;
+  top: 4%;
   cursor: pointer;
 }
 
@@ -476,7 +515,7 @@ body {
   left: 75%;
   top: 30%;
   z-index: 3;
-  width: 50%;
+  width: 20%;
   cursor: pointer;
 }
 
