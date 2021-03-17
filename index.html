@@ -47,15 +47,16 @@
       <image id = 'bigImage2Up' width='100' height='100' preserveAspectRatio="none" />
     </svg>
     <div class='title' id='pageTitle'>Sent&iacute; la tranquilidad de saber que<br>est&aacute;n bien, en todo momento</div>
-    <img src='assets/Prendido_P2.png' id='homeDetector1' class = 'homeDetector' onclick = 'location = "./index.html?page=v2"'></img>
-    <img src='assets/homeDetector.png' id='homeDetector2' class = 'homeDetector' onclick = 'location = "./index.html?page=v1"'></img>
+    <img src='assets/home.png' id='home' class = 'removeOnHome' onmouseover="" onclick = 'location = "./index.html"'></img>
     <div id='homeDetectorTitle1'>Modelo N&deg;1</div>
     <div id='homeDetectorTitle2'>Modelo N&deg;2</div>
+    <img src='assets/Prendido_P2.png' id='homeDetector1' class = 'homeDetector' onclick = 'location = "./index.html?page=v2"'></img>
+    <img src='assets/homeDetector.png' id='homeDetector2' class = 'homeDetector' onclick = 'location = "./index.html?page=v1"'></img>
     <div id='footer'>
       <a href='./index.html' id = 'logoA'>
         <img src="assets/logo.png" id='logo' />
       </a>
-      <div class='subtitle'>NUEVO DETECTOR WI-FI<br>
+      <div class='subtitle'>SMART DETECTOR<br>
         <div class='subtitle subsubtitle'>DE GAS NATURAL Y MON&Oacute;XIDO DE CARBONO</div>
       </div>
       <img src='assets/arrowDown.png' id='arrowDown' onclick='actions.scrollY(null, 1, 28);' class = 'removeOnHome'></img>
@@ -66,6 +67,7 @@
       <img src='assets/mobile_risk1.png' id='homeMobile2'></img>
     </div>
     <div id='downContainer'>
+      <img src='assets/home.png' id='home2' class = 'removeOnHome' onmouseover="" onclick = 'location = "./index.html"'></img>
       <svg width='50%' viewBox="0 0 100 100" id='bigImage3' preserveAspectRatio="none">
         <image href="assets/bigImage1_Web.png" width='100' height='100' preserveAspectRatio="none" />
       </svg>
@@ -76,11 +78,23 @@
       <img src='assets/arrowUp.png' class='arrowUp' onclick='actions.scrollY(null, -1, 28);'></img>
       <div class='button' id='button1' onclick='actions.scrollX("soundContainer", "downContainer");'>Prob&aacute; el detector<br>en funcionamiento<br><br><img src = 'assets/arrowRight.png' id = 'arrowRight1' class = 'arrowH' /></div>
       <div class='button' id='button2' onclick='actions.scrollX("techContainer", "downContainer");'>Especificaciones<br>t&eacute;cnicas<br><img id = 'arrowRight2' src = 'assets/arrowRight.png' class = 'arrowH' /></div>
+      <div id='footer'>
+        <a href='./index.html' id = 'logoA'>
+          <img src="assets/logo.png" id='logo' style="visibility: visible; width: 12%;"/>
+        </a>
+        <div class='subtitle'>SMART DETECTOR<br>
+          <div class='subtitle subsubtitle'>DE GAS NATURAL Y MON&Oacute;XIDO DE CARBONO</div>
+        </div>
+        <img id='detector2' class = 'removeOnHome'></img>
+        <div id='plus' class = 'removeOnHome'>+</div>
+        <img src='assets/mobile_home.png' id='mobile' class = 'removeOnHome'></img>
+      </div>
     </div>
     <div id='soundContainer'>
       <audio src='assets/sounds/sound0.wav' id='sound0' onended = 'event.target.play();'></audio>
       <audio src='assets/sounds/sound1.mpeg' id='sound1' onended = 'event.target.play();'></audio>
       <audio src='assets/sounds/sound1.mpeg' id='sound2' onended = 'event.target.play();'></audio>
+      <img src='assets/home.png' id='home3' class = 'removeOnHome' onmouseover="" onclick = 'location = "./index.html"'></img>
       <div id='detectorRunningTitle'>Prob&aacute; el funcionamiento del detector<br>y la aplicaci&oacute;n mobile</div>
       <div id='buttonDetectorContainer'>
         <div id='detectorButtonLeft' class='detectorButton detectorButtonSelected' onclick = 'actions.sound.play(null, "detectorButtonLeft", "detectorButtonText1", imageMapping[actions.getDevice().name][global.query.page].detectorEmptyCatched.file, "assets/mobile_home.png");'>
@@ -102,6 +116,7 @@
       <img src='assets/arrowLeft.png' class='arrowLeft' onclick='actions.scrollX("downContainer", "soundContainer");'></img>
     </div>
     <div id = 'techContainer'>
+      <img src='assets/home.png' id='home3' class = 'removeOnHome' onmouseover="" onclick = 'location = "./index.html"'></img>
       <img src='assets/arrowLeft.png' class='arrowLeft' onclick='actions.scrollX("downContainer", "techContainer");'></img>
       <div class = 'title techTitle' id = 'techTitle1'>Especificaciones<br>t&eacute;cnicas</div>
       <div class = 'title techTitle' id = 'techTitle2'>Dimensiones<br>y peso</div>

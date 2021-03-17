@@ -17,12 +17,12 @@ web.resize = () => {
       detectorRunningTitle: { fontSize: '2.4vw', textAlign: 'center', width: '100%' },
       detectorButtonLeft: { borderRadius: '17px 0px 0px 17px' },
       detectorButtonRight: { borderRadius: '0px 17px 17px 0px' },
-      volume: { width: '6.2%', top: '36%' },
-      detectorEmpty: { width: '28%', left: '30%', top: '68%' },
+      volume: { width: '4.2%', top: '32%' },
+      detectorEmpty: { width: '28%', left: '30%', top: '71%' },
       mobileHome: {
-        width: '19%',
+        width: '18%',
         left: '67.45%',
-        top: '74%',
+        top: '69%',
         transform: 'translate(-50%, -50%)'
       },
       techTitle1: { top: '4%' },
