@@ -156,7 +156,7 @@ body {
   position: absolute;
   transform: translate(-50%);
   left: 50%;
-  top: 90%;
+  top: 120%;
   width: 5.3%;
 }
 
@@ -170,7 +170,7 @@ body {
 #arrowDown {
   position: absolute;
   transform: translate(-50%, -100%);
-  left: 50.6%;
+  left: 50%;
   top: 95%;
   height: auto;
   cursor: pointer;
@@ -226,7 +226,7 @@ body {
 #plus {
   position: absolute;
   height: auto;
-  left: 77.5%;
+  left: 76.5%;
   top: 3%;
   font-family: 'GothamBook', sans-serif;
   font-size: 4.2vw;
@@ -247,7 +247,7 @@ body {
   width: 9.5%;
   height: auto;
   transform: translate(0, -50%);
-  left: 64%;
+  left: 65%;
   top: 10%;
 }
 
@@ -441,7 +441,8 @@ body {
 #techBoxDescription {
   position: absolute;
   left: 35%;
-  top: 195%;
+  top: 165%;
+  padding-bottom: 12%;
   font-family: 'GothamMedium', sans-serif;
   color: #072d61;
   font-weight: normal;
