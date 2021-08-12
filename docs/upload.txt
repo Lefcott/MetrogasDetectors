@@ -1,0 +1,1 @@
+aws s3 cp ./ s3://nuevo-detector-wifi --recursive --exclude ".git/" ".prettierrc" ".DS_Store" ".eslintignore" ".eslintrc.json" "README.md" --acl public-read 
